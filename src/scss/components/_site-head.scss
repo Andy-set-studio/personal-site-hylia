@@ -3,5 +3,10 @@
     font-weight: 700;
     text-decoration: none;
     color: var(--color-text);
+
+    svg {
+      width: get-size(800);
+      height: get-size(800);
+    }
   }
 }

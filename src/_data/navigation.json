@@ -3,17 +3,32 @@
     {
       "text": "Home",
       "url": "/",
-      "external": false
+      "rel": null
     },
     {
-      "text": "GitHub",
-      "url": "https://github.com/andybelldesign/hylia",
-      "external": true
+      "text": "Writing",
+      "url": "/writing/",
+      "rel": null
+    },
+    {
+      "text": "Patreon",
+      "url": "//www.patreon.com/andybelldesign",
+      "rel": "external"
     },
     {
       "text": "Twitter",
-      "url": "https://twitter.com/andybelldesign",
-      "external": true
+      "url": "//twitter.com/andybelldesign",
+      "rel": "me"
+    },
+    {
+      "text": "CodePen",
+      "url": "//codepen.io/andybelldesign",
+      "rel": null
+    },
+    {
+      "text": "GitHub",
+      "url": "//github.com/andybelldesign",
+      "rel": "me"
     }
   ]
 }

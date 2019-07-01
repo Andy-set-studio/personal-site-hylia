@@ -1,4 +1,5 @@
 {
   "layout": "layouts/post.njk",
-  "permalink": "/wrote/{{ title | slug }}/index.html"
+  "permalink": "/wrote/{{ title | slug }}/index.html",
+  "socialImage": "https://hankchizljaw.imgix.net/social-share.png"
 }
