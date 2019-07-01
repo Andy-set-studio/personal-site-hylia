@@ -1,0 +1,11 @@
+.availability {
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: get-size(500);
+  border: 2px solid var(--color-stroke);
+
+  .heading-permalink {
+    opacity: 0;
+  }
+}

@@ -5,7 +5,7 @@
     --flow-space: #{get-size(500)};
     font-size: get-size(500);
 
-    a {
+    a:not([class]) {
       color: currentColor;
 
       &:hover {
