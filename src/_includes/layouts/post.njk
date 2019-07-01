@@ -44,5 +44,9 @@
     </article>
   </main>
 {% endblock %}
-
+{% block foot %}
+  {% if hasCodePen %}
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  {% endif %}
+{% endblock %}
 {{ content | safe }}
