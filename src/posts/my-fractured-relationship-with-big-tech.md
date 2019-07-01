@@ -1,6 +1,6 @@
 ---
 layout: 'layouts/post.njk'
-title: 'My fractured relationship with “big tech”'
+title: 'My fractured relationship with big tech'
 date: '2018-09-13'
 tags: 'writing'
 ---

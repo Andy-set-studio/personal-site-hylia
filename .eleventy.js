@@ -44,11 +44,14 @@ module.exports = function(config) {
 
   // Custom collections
   const livePosts = post => post.date <= now && !post.data.draft;
-  const feedPosts = post => !['weeknotes'].some(x => post.data.tags.includes(x));
+  const feedExcluded = post => !['weeknotes'].some(x => post.data.tags.includes(x));
 
   config.addCollection('posts', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
+      ...collection
+        .getFilteredByGlob('./src/posts/*.md')
+        .filter(livePosts)
+        .filter(feedExcluded)
     ].reverse();
   });
 
@@ -57,7 +60,7 @@ module.exports = function(config) {
       ...collection
         .getFilteredByGlob('./src/posts/*.md')
         .filter(livePosts)
-        .filter(feedPosts)
+        .filter(feedExcluded)
     ]
       .reverse()
       .slice(0, site.maxPostsPerPage);

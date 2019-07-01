@@ -1,6 +1,6 @@
 ---
 layout: 'layouts/post.njk'
-title: 'No More “Anchor Buttons”'
+title: 'No More Anchor Buttons'
 date: '2015-09-28'
 updated: '2018-08-22'
 tags: 'writing'
@@ -10,7 +10,7 @@ I’ve been as guilty as the next person for using **<a>** tags as buttons in th
 
 An `<a>` tag is for linking to other pages of a website. It’s not for triggering some fancy JavaScript interaction. An `<a>` tag is however much easier to style than a `<button>`, which makes the wide usage of them as buttons understandable.
 
-You might wonder why this sudden realisation has occurred now. It should have occurred a long time ago, but today I logged into [Nest](http://www.nestpensions.org.uk/), the workplace pension provider’s *“My Account”* area.
+You might wonder why this sudden realisation has occurred now. It should have occurred a long time ago, but today I logged into [Nest](http://www.nestpensions.org.uk/), the workplace pension provider’s _“My Account”_ area.
 
 This tweet followed shortly after:
 
@@ -26,6 +26,6 @@ From this day forward, I will not use an`<a>` for a JavaScript event ever again 
 
 You have my word.
 
-***
+---
 
 **Update**: This still annoys me two years later so I made '[Button Pal](https://codepen.io/hankchizljaw/details/Vxpjvo/)' to give folks some easy to copy-and-paste styles.
