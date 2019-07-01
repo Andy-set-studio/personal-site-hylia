@@ -10,6 +10,9 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 const parseTransform = require('./src/transforms/parse-transform.js');
 
+// Import shortcodes
+const codepen = require('./src/shortcodes/codepen.js');
+
 // Import data files
 const site = require('./src/_data/site.json');
 
@@ -26,6 +29,9 @@ module.exports = function(config) {
   config.addTransform('htmlmin', htmlMinTransform);
   config.addTransform('parse', parseTransform);
 
+  // Shortcodes
+  config.addShortcode('codepen', codepen);
+
   // Passthrough copy
   config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/images');
@@ -38,6 +44,8 @@ module.exports = function(config) {
 
   // Custom collections
   const livePosts = post => post.date <= now && !post.data.draft;
+  const feedPosts = post => !['weeknotes'].some(x => post.data.tags.includes(x));
+
   config.addCollection('posts', collection => {
     return [
       ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
@@ -45,7 +53,12 @@ module.exports = function(config) {
   });
 
   config.addCollection('postFeed', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
+    return [
+      ...collection
+        .getFilteredByGlob('./src/posts/*.md')
+        .filter(livePosts)
+        .filter(feedPosts)
+    ]
       .reverse()
       .slice(0, site.maxPostsPerPage);
   });

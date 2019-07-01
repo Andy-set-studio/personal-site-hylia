@@ -1,14 +1,12 @@
 ---
-title: A post with code samples
-date: '2019-06-18'
-tags:
-  - demo-content
-  - code
-  - blog
+layout: 'layouts/post.njk'
+title: 'Creating a full bleed CSS utility '
+subTitle: 'Piccalilli CSS Utility — Issue #2'
+issueSlug: '/issues/2'
+date: '2019-04-05'
+tags: ['writing', 'piccalilli-pattern']
+hasCodePen: true
 ---
-The best way to demo a code post is to display a real life post, so check out this one from [andy-bell.design](https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/) about a full bleed CSS utility.
-
-- - -
 
 Sometimes you want to break your components out of the constraints that they find themselves in. A common situation where this occurs is when you don’t have much control of the container that it exists in, such as a CMS main content area.
 
@@ -30,14 +28,11 @@ It’s small, but hella mighty:
 
 Here it is in a context where it makes a fancy `<aside>` and a `<figure>` element bleed out of their parent container.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Piccalilli CSS Utility — Issue  #2 — Full bleed utility" src="//codepen.io/andybelldesign/embed/Nmxrwv/?height=300&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/andybelldesign/pen/Nmxrwv/'>Piccalilli CSS Utility — Issue  #2 — Full bleed utility</a> by Andy Bell
-  (<a href='https://codepen.io/andybelldesign'>@andybelldesign</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+{% codepen 'Nmxrwv', 'result', 'Piccalilli CSS Utility — Issue  #2 — Full bleed utility' %}
 
 The `.full-bleed` utility gives those elements prominence and _importantly_ keeps their semantic place in the page. Just how I like it.
 
-- - -
+---
 
 🔥 **Pro tip**: When working with a utility like `.full-bleed`, it’s a good idea to add an inner container that has a max-width and auto horizontal margin. For this, I normal create a shared `.wrapper` component like this:
 
@@ -51,7 +46,7 @@ The `.full-bleed` utility gives those elements prominence and _importantly_ keep
 
 Having a container like `.wrapper` helps to create consistent, centred content.  
 
-- - -
+---
 
 ### How the `.full-bleed` utility works
 
