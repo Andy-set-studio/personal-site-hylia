@@ -66,6 +66,14 @@ module.exports = function(config) {
       .slice(0, site.maxPostsPerPage);
   });
 
+  config.addCollection('feed', collection => {
+    const notes = collection.getFilteredByTag('notes');
+    const links = collection.getFilteredByTag('links');
+    return notes.concat(links).sort((a, b) => {
+      return new Date(b.date) - new Date(a.date);
+    });
+  });
+
   // Plugins
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);

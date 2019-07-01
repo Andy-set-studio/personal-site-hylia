@@ -1,28 +1,67 @@
 ---
-permalink: '/feed.xml'
+title: Tag Archive
+pagination:
+  data: collections.feed
+  size: 5
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+    - postFeed
+    - tweets
+    - toots
+    - writing
+  addAllPagesToCollections: true
+permalink: feed/page/{{ pagination.pageNumber }}/index.html
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.name }}</title>
-	<subtitle></subtitle>
-	<link href="{{ site.url }}{{ permalink }}" rel="self"/>
-	<link href="{{ site.url }}/"/>
-	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
-	<id>{{ site.url }}</id>
-	<author>
-  <name>{{ site.authorName }}</name>
-  <email>{{ site.authorEmail }}</email>
-	</author>
-	{% for post in collections.posts %}
-  {% set absolutePostUrl %}{{ site.url }}{{ post.url | url }}{% endset %}
-  <entry>
-    <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | rssDate }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-    <content type="html"><![CDATA[
-      {{ post.templateContent | safe }}
-    ]]></content>
-  </entry>
-	{% endfor %}
-</feed>
+
+{% extends 'layouts/base.njk' %}
+{% set pageType = 'Updates Feed' %}
+
+{% if pagination.pageNumber > 0 %}
+  {% set paginationPrevUrl = pagination.previousPageHref %}
+  {% set paginationPrevText = 'Newer items' %}
+{% endif %}
+{% if pagination.nextPageHref %}
+  {% set paginationNextUrl = pagination.nextPageHref %}
+  {% set paginationNextText = 'Older items' %}
+{% endif %}
+
+{% block content %}
+  <main id="main-content" tabindex="-1">
+    <section class="[ post-list ] [ gap-bottom-900 ]">
+      <div class="[ inner-wrapper ] [ sf-flow ]">
+        <h1 class="[ post-list__heading ] [ text-700 md:text-800 ]">Updates</h1>
+        <ol class="[ post-list__items ] [ sf-flow ] [ pad-top-300 ]" reversed>
+          {% for item in pagination.items %}
+            <li class="post-list__item">
+              <article class="[ post ] [ sf-flow ]">
+                <h2 class="font-base leading-tight text-700 weight-mid">
+                  <a class="post-list__link" href="{{ item.url }}">{{ item.data.title }}</a>
+                </h2>
+                <p class="gap-top-300 weight-mid">
+                  <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
+                </p>
+                <div class="[ post__body ] [ inner-wrapper ] [ text-500 ] [ sf-flow ] [ e-content ]">
+                  {{ item.templateContent | safe }}
+                  {% if item.data.image %}
+                    <p>
+                      <img src="{{ item.data.image }}" alt="{{ item.data.alt }}" /> 
+                    </p>
+                  {% endif %}
+                  {% if item.data.linkUrl %}
+                    <p><a href="{{ item.data.linkUrl }}" rel="external" aria-label="Visit: {{ item.data.linkUrl }}">{{ item.data.linkUrl }}</a></p>
+                  {% endif %}
+                </div>
+              </article>
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+    </section>
+    {% include "partials/components/pagination.njk" %}
+  </main>
+{% endblock %}
+
