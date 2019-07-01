@@ -1,0 +1,33 @@
+---
+permalink: feed/writing.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>HankChizlJaw Articles</title>
+	<subtitle>Longform articles written by Andy Bell</subtitle>
+	<link href="https://andy-bell.design/feed/writing.xml" rel="self"/>
+	<link href="https://andy-bell.design/"/>
+	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+	<id>https://andy-bell.design</id>
+	<author>
+		<name>Andy Bell</name>
+		<email>me@andy-bell.design</email>
+	</author>
+	{%- for post in collections.posts.slice(0, 15) %}
+        {% if not post.data.external %}
+            {% set absolutePostUrl %}https://andy-bell.design{{ post.url | url }}{% endset %}
+            <entry>
+                <title>{{ post.data.title }}</title>
+                <author>
+                    <name>Andy Bell</name>
+                </author>
+                <link href="{{ absolutePostUrl }}"/>
+                <updated>{{ post.date | rssDate }}</updated>
+                <id>{{ absolutePostUrl }}</id>
+                <content type="html"><![CDATA[
+                    {{ post.templateContent | safe }}
+             ]]></content>
+            </entry>
+        {% endif %}
+	{%- endfor %}
+</feed>
