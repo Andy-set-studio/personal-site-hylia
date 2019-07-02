@@ -13,7 +13,7 @@ In the U.K. you're supposed to stay at home until you're having roughly 3 contra
 
 ## How it works
 
-You go to [hankchizljaw.io/contraction-log.html](https://hankchizljaw.io/contraction-log.html) and you get sent to a [CodePen](https://codepen.io) project. All this does is present you with a [Boilerform](https://boilerform.design) powered form. This is where you log a duration as an entry. As you log each entry, it keeps a track of the timestamps and shows you a when each contraction was and how long it was between each one. It does all of this by storing a JSON object in local storage.
+You go to [here](https://99ab819b7d18458aa344328db589274e.codepen.website) and you get sent to a [CodePen](https://codepen.io) project. All this does is present you with a [Boilerform](https://boilerform.design) powered form. This is where you log a duration as an entry. As you log each entry, it keeps a track of the timestamps and shows you a when each contraction was and how long it was between each one. It does all of this by storing a JSON object in local storage.
 
 It's a very simple and _highly janky_ app that I hope someone can find a use of. You can add it to your home screen on iOS too. You can also [see the source code on CodePen](https://codepen.io/hankchizljaw/project/editor/XbpWqE) if you want to have a poke around. 
 
