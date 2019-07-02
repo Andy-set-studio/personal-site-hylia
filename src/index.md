@@ -1,8 +1,8 @@
 ---
 layout: 'home'
 title: 'Hello, I’m Andy'
-postsHeading: 'Latest posts'
-archiveButtonText: 'See all posts'
+postsHeading: 'Latest writing'
+archiveButtonText: 'See all writing'
 socialImage: 'https://hankchizljaw.imgix.net/social-share.png'
 metaTitle: 'Andy Bell - Freelance Web Designer and Developer'
 ---
