@@ -16,7 +16,7 @@ I don’t really have time or the will to redesign my website at the moment, but
 
 My site is pretty big now, with all of the articles, notes and links, so it’s good to see how Hylia handles that amount of content. So far, so good!
 
-I also want to use my site as a test for new features for Hylia. The first one I’ll play around with is adding webmentions. I like to keep things transparent, so here’s [my Notion board](https://www.notion.so/8e70bfa1150b4f188126ccfb1818de3a?v=bd571ada8b16432e93af4d00ba084090), so you can see what I’m playing with and planning to play with.
+I also want to use my site as a test for new features for Hylia. The first one I’ll play around with is adding webmentions. I like to keep things transparent, so here’s [my Notion board](https://www.notion.so/8e70bfa1150b4f188126ccfb1818de3a?v=bd571ada8b16432e93af4d00ba084090), so you can see what I’m playing with and planning to play with. You can also check out the [source code of the site](https://github.com/andybelldesign/personal-site-hylia/).
 
 ## I’m already pushing back into Hylia
 
