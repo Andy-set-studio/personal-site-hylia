@@ -33,6 +33,7 @@ module.exports = function(config) {
   config.addShortcode('codepen', codepen);
 
   // Passthrough copy
+  config.addPassthroughCopy('src/_redirects');
   config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/images');
   config.addPassthroughCopy('src/js');
