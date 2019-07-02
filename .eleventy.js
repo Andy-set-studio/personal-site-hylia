@@ -70,7 +70,7 @@ module.exports = function(config) {
   config.addCollection('feed', collection => {
     const notes = collection.getFilteredByTag('notes');
     const links = collection.getFilteredByTag('links');
-    return notes.concat(links).sort((a, b) => {
+    return [...notes, ...links].sort((a, b) => {
       return new Date(b.date) - new Date(a.date);
     });
   });
@@ -83,42 +83,13 @@ module.exports = function(config) {
     return collection.getFilteredByTag('links').reverse();
   });
 
-  config.addCollection('writingFeed', function(collection) {
-    return collection
-      .getFilteredByTag('writing')
-      .filter(item => {
-        return item.data.tags.indexOf('weeknotes') < 0;
-      })
-      .reverse();
-  });
-
   config.addCollection('allFeed', function(collection) {
-    return collection
-      .getAll()
-      .filter(item => {
-        const allowedItems = ['writing', 'links', 'notes'];
-
-        if (!item.data) {
-          return false;
-        }
-
-        let tags = item.data.tags;
-
-        if (typeof tags === 'undefined') {
-          return false;
-        }
-
-        if (typeof tags === 'string') {
-          tags = [tags];
-        }
-
-        return tags.some(tag => {
-          return allowedItems.indexOf(tag) >= 0;
-        });
-      })
-      .sort((a, b) => {
-        return new Date(b.data.date) - new Date(a.data.date);
-      });
+    const notes = collection.getFilteredByTag('notes');
+    const links = collection.getFilteredByTag('links');
+    const posts = collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts);
+    return [...notes, ...links, ...posts].sort((a, b) => {
+      return new Date(b.date) - new Date(a.date);
+    });
   });
   // Plugins
   config.addPlugin(rssPlugin);
