@@ -16,7 +16,10 @@ It’s important to not make presumptions in design if you can help it, so I’m
 
 ## What we are building
 
+<figure>
 <video src="https://res.cloudinary.com/andybelldesign/video/upload/v1559290559/misc/dark-light-mode-demo_cbfd3f.mp4" controls></video>
+<figcaption>Video shows a dark theme by default being toggled by a toggle button on click.</figcaption>
+</figure>
 
 The video shows that because my operating system is in dark mode, the demo honours it by default. I then use the toggle to switch the theme. This is then maintained by local storage.
 
