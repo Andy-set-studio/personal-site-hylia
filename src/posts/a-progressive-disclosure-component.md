@@ -13,7 +13,7 @@ These disclosure patterns work well, but they are often mired with accessibility
 In this article, we’re going to dive into how we can create a progressively enhanced component that will be accessible _and_ provide a solid [minimum viable experience](https://andy-bell.design/wrote/the-power-of-progressive-enhancement/) when JavaScript isn’t available.
 
 <figure>
-<video src="http://hankchizljaw.imgix.net/progressive-disclosure.mp4" controls></video>
+<video src="https://hankchizljaw.imgix.net/progressive-disclosure.mp4" controls></video>
 <figcaption>A screencast shows the completed disclosure component which has a trigger button that when clicked, toggles the visibility of the sibling panel. The JavaScript is then disabled and the component reverts to showing the previously concealed content by default.</figcaption>
 </figure>
 
