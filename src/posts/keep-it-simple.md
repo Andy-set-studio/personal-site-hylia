@@ -18,7 +18,7 @@ Always remember that JavaScript is _incredibly expensive_, so if your app **requ
 
 It’s important to consider questions like this—especially if you are a global company with millions of users, like Twitter. It’s also worth considering **training** your team, rather than **tooling** your team.
 
-In general, keeping everything as simple as possible will by proxy, give you a more resilient, often more accessible end-result, which will be better for your users. Yes, _progressively enhance_ your solid, simple and semantic base-point with CSS and JavaScript, but always keep an eye on wether you are creating accessibility issues with those enhancements, too. 
+In general, keeping everything as simple as possible will by proxy, give you a more resilient, often more accessible end-result, which will be better for your users. Yes, _progressively enhance_ your solid, simple and semantic base-point with CSS and JavaScript, but always keep an eye on whether you are creating accessibility issues with those enhancements, too. 
 
 Now, with that solid approach, test your work with assistive technology and with real people. That’ll give you a real, accurate account of how accessible your website or app is, because [tools can mislead you](https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/).
 
