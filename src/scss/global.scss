@@ -42,13 +42,18 @@ hr {
 
 // Components
 @import 'components/availability';
+@import 'components/avatar';
+@import 'components/avatar-group';
 @import 'components/button';
+@import 'components/comments';
 @import 'components/heading-permalink';
 @import 'components/intro';
+@import 'components/input-field';
 @import 'components/nav';
 @import 'components/pagination';
 @import 'components/post';
 @import 'components/post-list';
+@import 'components/scroll-track';
 @import 'components/site-head';
 @import 'components/site-foot';
 @import 'components/skip-link';

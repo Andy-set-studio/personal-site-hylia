@@ -5,6 +5,7 @@ npm-debug.*
 *.swp
 .DS_Store
 .sass-cache
+.env
 node_modules
 dist 
 

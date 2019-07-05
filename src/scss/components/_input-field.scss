@@ -1,0 +1,11 @@
+.input-field {
+  display: block;
+  border: 1px solid get-color('mid');
+  padding: get-size(300) get-size('base');
+  font: inherit;
+  font-size: get-size(500);
+  line-height: 1;
+  min-width: 16rem;
+  max-width: 26rem;
+  flex: auto;
+}

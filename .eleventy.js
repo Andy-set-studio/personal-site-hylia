@@ -1,10 +1,14 @@
+require('dotenv').config();
+
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 // Import filters
 const dateFilter = require('./src/filters/date-filter.js');
+const likesFilter = require('./src/filters/likes-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
+const webmentionsFilter = require('./src/filters/webmentions-filter.js');
 
 // Import transforms
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
@@ -19,8 +23,10 @@ const site = require('./src/_data/site.json');
 module.exports = function(config) {
   // Filters
   config.addFilter('dateFilter', dateFilter);
+  config.addFilter('likesFilter', likesFilter);
   config.addFilter('markdownFilter', markdownFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
+  config.addFilter('webmentionsFilter', webmentionsFilter);
 
   // Layout aliases
   config.addLayoutAlias('home', 'layouts/home.njk');
