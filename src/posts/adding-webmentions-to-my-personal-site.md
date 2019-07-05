@@ -6,7 +6,7 @@ tags: ['indieweb', 'webmentions']
 
 I think Webmentions are cool because they are a proper web standard, so I’ve been keen to get them going on my site—especially after I [burned it to the ground](https://andy-bell.design/wrote/eating-my-own-dog-food/) and replaced it with an instance of [Hylia](https://hylia.website).
 
-I’ve had [Max’s tutorial](https://mxb.dev/blog/using-webmentions-on-static-sites/) bookmarked for _ages_ and it is a fantastic resource. I basically followed it to the letter, with a couple of modifications to match the code style on this site. If you’re looking to implement yourself, definitely head over to his site.
+I’ve had [Max’s tutorial](https://mxb.dev/blog/using-webmentions-on-static-sites/) bookmarked for _ages_ and it is a fantastic resource. I basically followed it to the letter, with a couple of modifications to match the code style of this site. If you’re looking to implement yourself, definitely head over to his site.
 
 I did do the implementation with a [<abbr title="pull request">PR</abbr>](https://github.com/andybelldesign/personal-site-hylia/pull/2), though, so if you want to see the code that I implemented, check it out.
 
@@ -30,10 +30,8 @@ One thing you could do to help is blog about implementing Webmentions on your si
 
 ## Wrapping up
 
-This has been fun and it certainly kept me entertained on the [long train journey to Brighton](https://andy-bell.design/notes/198).
+This has been fun and it certainly kept me entertained on the long [journey to Brighton](https://andy-bell.design/notes/198).
 
-I imagine folks are wondering if I’m going to implement this stuff on [Hylia](https://hylia.website). I’m not going to do that quite yet.
-
-My implementation is rough, so I think it’d cause people more headaches. Maybe after some more thought and work, I can write some helpful docs or a very specific Hylia tutorial.
+I imagine folks are wondering if I’m going to implement this stuff on [Hylia](https://hylia.website). I’m not going to do that quite yet because my implementation is rough, so I think it’d cause people more headaches. Maybe after some more thought and work, I can write some helpful docs or a very specific Hylia tutorial.
 
 Anyway, you can now comment on any post, note or link!
