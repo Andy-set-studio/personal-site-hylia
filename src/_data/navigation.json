@@ -11,6 +11,11 @@
       "rel": null
     },
     {
+      "text": "Feed",
+      "url": "/feed",
+      "rel": null
+    },
+    {
       "text": "Patreon",
       "url": "//www.patreon.com/andybelldesign",
       "rel": "external"
