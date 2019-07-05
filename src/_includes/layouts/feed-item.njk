@@ -26,6 +26,7 @@
           <p><a href="{{ linkUrl }}" rel="external" aria-label="Visit: {{ linkUrl }}">{{ linkUrl }}</a></p>
         {% endif %}
       </div>
+      {% include "partials/global/webmentions.njk" %}
       {% include "partials/global/availability.njk" %}
       {% if site.enableThirdPartyComments %}
         <hr />

@@ -1,0 +1,9 @@
+.avatar {
+  display: block;
+  width: get-size(800);
+  height: get-size(800);
+  border-radius: get-size(800);
+  object-fit: cover;
+  border: 1px solid get-color('mid');
+  flex-shrink: 0;
+}
