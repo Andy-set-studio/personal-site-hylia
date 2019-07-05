@@ -40,7 +40,7 @@
                   <time datetime="{{ item['wm-received'] | w3DateFilter }}" class="dt-published">{{ item['wm-received'] | dateFilter }}</time>
                 </p>
                 <p class="text-300">
-                  <a href="{{ item.url }}">Link to source</a>
+                  <a href="{{ item.url }}" class="color-current">Link to source</a>
                 </p>
               </header>
               {% if item.content.value %}
