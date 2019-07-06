@@ -13,7 +13,7 @@
             <span class="visually-hidden">{{ like.author.name }}</span>
             <img 
               class="avatar"
-              src="{{ like.author.photo | replace('https://webmention.io/avatar/', 'https://andy-bell-design-avatar.imgix.net/') }}?auto=format&w=100&q=10" 
+              src="{{ like.author.photo | replace('https://webmention.io/avatar/', 'https://andy-bell-design-avatar.imgix.net/') }}" 
               alt="Image of {{ like.author.name }}" 
               loading="lazy" />
           </a>
@@ -30,7 +30,7 @@
           <article class="[ box-flex ] [ h-cite ]" id="webmention-{{ webmention['wm-id'] }}">
             <img 
               class="avatar"
-              src="{{ item.author.photo | replace('https://webmention.io/avatar/', 'https://andy-bell-design-avatar.imgix.net/') }}?auto=format&w=100&q=10" 
+              src="{{ item.author.photo | replace('https://webmention.io/avatar/', 'https://andy-bell-design-avatar.imgix.net/') }}" 
               alt="Image of {{ item.author.name }}" 
               loading="lazy" />
             <div class="[ pad-left-base ] [ sf-flow ]">
