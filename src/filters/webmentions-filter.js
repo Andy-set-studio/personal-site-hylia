@@ -16,10 +16,8 @@ const webmentionsFilter = function(webmentions, url) {
   };
 
   const sanitize = entry => {
-    const {content} = entry;
-    if (content['content-type'] === 'text/html') {
-      content.value = sanitizeHTML(content.value);
-    }
+    const { html, text } = entry.content;
+    entry.content.value = html ? sanitizeHTML(html) : sanitizeHTML(text);
     return entry;
   };
 
