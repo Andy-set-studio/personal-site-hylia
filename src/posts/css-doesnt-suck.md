@@ -4,6 +4,7 @@ layout: 'layouts/post.njk'
 date: '2019-01-09'
 updated: '2019-03-08'
 tags: 'writing'
+permalink: '/wrote/css-doesnt-suck/index.html'
 ---
 
 Another week comes along and with it, another assault on CSS. It’s turning into a bit of a trend—particularly in the JavaScript community—to crap on CSS wherever possible. I could lambaste those who frequently do this, but instead, I thought I’d write about CSS positively to counter the falsities that are spread over the tech tyre fire that is Twitter.

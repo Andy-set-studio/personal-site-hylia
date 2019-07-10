@@ -3,6 +3,7 @@ title: 'I’m warming to Tailwind CSS'
 tags: ['writing'] 
 layout: 'layouts/post.njk'
 date: '2019-01-15'
+permalink: '/wrote/im-warming-to-tailwind-css/index.html'
 ---
 
 We’re using [Tailwind CSS](https://tailwindcss.com/) to handle our [design tokens](https://www.lightningdesignsystem.com/design-tokens/) in the current project I’m on and I’ve gotta say, I am _digging_ it.

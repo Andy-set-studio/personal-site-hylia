@@ -68,10 +68,9 @@ Understanding the cascade and specificity in CSS is really important and that kn
 
 ### Further reading
 
-* [CSS Specificity: Things You Should Know - Smashing Magazine](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) (an oldie, but a goodie)
-* [Specifics on CSS Specificity - CSS-Tricks](https://css-tricks.com/specifics-on-css-specificity/) (another oldie, but a goodie)
-* [Link Specificity - Eric Meyer](https://meyerweb.com/eric/css/link-specificity.html)
-* [W3 Spec](https://www.w3.org/TR/selectors-3/#specificity)
-* [The Importance of !important: Forcing Immutability in CSS - Harry Roberts](https://csswizardry.com/2016/05/the-importance-of-important/)
-* [Batificity](http://batificity.com) by [Mandy Michael](https://twitter.com/Mandy_Kerr)
-
+- [CSS Specificity: Things You Should Know - Smashing Magazine](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) (an oldie, but a goodie)
+- [Specifics on CSS Specificity - CSS-Tricks](https://css-tricks.com/specifics-on-css-specificity/) (another oldie, but a goodie)
+- [Link Specificity - Eric Meyer](https://meyerweb.com/eric/css/link-specificity.html)
+- [W3 Spec](https://www.w3.org/TR/selectors-3/#specificity)
+- [The Importance of !important: Forcing Immutability in CSS - Harry Roberts](https://csswizardry.com/2016/05/the-importance-of-important/)
+- [Batificity](http://batificity.com) by [Mandy Michael](https://twitter.com/Mandy_Kerr)

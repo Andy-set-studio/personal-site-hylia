@@ -3,6 +3,7 @@ layout: 'layouts/post.njk'
 title: 'Get a CSS Custom Property value with JavaScript'
 date: '2019-04-09'
 tags: 'writing'
+permalink: '/wrote/get-css-custom-property-value-with-javascript/index.html'
 ---
 
 [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) are handy for making highly configurable CSS components and themes, but that’s not their only handy use. Sometimes you might want to do something like send some information to some JavaScript.
