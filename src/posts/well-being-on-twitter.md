@@ -1,5 +1,5 @@
 ---
-title: 'Wellbeing on Twitter'
+title: 'Well-being on Twitter'
 date: '2019-07-17'
 tags: ['writing', 'wellbeing', 'twitter']
 ---
