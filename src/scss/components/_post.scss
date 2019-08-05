@@ -31,6 +31,10 @@
       &:empty {
         display: none;
       }
+
+      code {
+        color: get-color('dark');
+      }
     }
 
     a:not([class]):hover {
