@@ -24,8 +24,8 @@
 }
 
 .button:focus:not(:hover) {
-  outline: 1px dotted var(--color-action-text);
-  outline-offset: -4px;
+  outline: 1px dotted var(--color-action-hover-text);
+  outline-offset: -6px;
 }
 
 .button:active {
