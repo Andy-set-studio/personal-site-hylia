@@ -15,8 +15,10 @@ module.exports = function(value, outputPath) {
       ...document.querySelectorAll('.post__body h2, .post__body h3')
     ];
     const articleEmbeds = [...document.querySelectorAll('main article iframe')];
-    const introWrapElements = [
-      ...document.querySelectorAll('.intro__summary > *, .intro__heading')
+    const highlightWrapElements = [
+      ...document.querySelectorAll(
+        '.intro__summary > *, .intro__heading, .availability > *'
+      )
     ];
 
     if (articleImages.length) {
@@ -75,9 +77,9 @@ module.exports = function(value, outputPath) {
       });
     }
 
-    // Wrap intro wrap elements in spans
-    if (introWrapElements.length) {
-      introWrapElements.forEach(element => {
+    // Wrap highlight wrap elements in spans
+    if (highlightWrapElements.length) {
+      highlightWrapElements.forEach(element => {
         if (element.innerHTML.indexOf('[ button ]') < 0) {
           element.innerHTML = `<span class="highlight">${element.innerHTML}</span>`;
         }
