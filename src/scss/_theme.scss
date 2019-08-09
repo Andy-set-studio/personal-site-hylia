@@ -20,6 +20,7 @@
 }
 
 @include dark-mode() {
+  --color-mode: 'dark';
   --color-bg: #{get-color('dark')};
   --color-text: #{get-color('light')};
   --color-action-bg: #{get-color('light')};
