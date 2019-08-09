@@ -20,7 +20,6 @@
 
     code {
       font-size: 1.2em;
-      color: var(--color-theme-primary);
       font-weight: 600;
       margin-left: 0.01ch;
       margin-right: 0.01ch;
@@ -34,7 +33,7 @@
     }
 
     blockquote {
-      border-left: 0.4rem solid var(--color-theme-primary-glare);
+      border-left: 0.4rem solid;
       margin-left: 0;
       padding-left: get-size(500);
       font-style: italic;
@@ -115,11 +114,6 @@
 
     h2 a {
       @extend %visually-hidden;
-    }
-
-    a {
-      background: var(--color-bg);
-      padding: 0.4rem 0.6rem;
     }
   }
 }
