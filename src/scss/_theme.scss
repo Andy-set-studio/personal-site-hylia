@@ -1,8 +1,17 @@
 :root {
-  // Pull the tokens and generate custom props
-  @each $color in $stalfos-colors {
-    #{'--color-' + nth($color, 1)}: #{nth($color, 2)};
-  }
+  --color-dark: #{get-color('dark')};
+  --color-light: #{get-color('light')};
+  --color-action-bg: #{get-color('dark')};
+  --color-action-text: #{get-color('light')};
+  --color-action-hover-bg: #{get-color('dark')};
+  --color-action-hover-text: #{get-color('light')};
+  --color-highlight: #{get-color('light')};
+
+  --bg-dots: url(#{"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='"+str_replace(
+      #{get-color('dark')},
+      '#',
+      '%23'
+    )+"' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"});
 
   // Set theme aliases
   --color-mode: 'light';
@@ -12,30 +21,29 @@
   --color-text-glare: #{get-color('dark')};
   --color-selection-text: #{get-color('light')};
   --color-selection-bg: #{get-color('dark')};
-  --color-stroke: #{get-color('mid')};
-  --color-action-bg: #{get-color('primary')};
-  --color-action-text: #{get-color('light')};
-  --color-theme-primary: #{get-color('primary')};
-  --color-theme-primary-glare: #{get-color('primary-glare')};
-  --color-theme-highlight: #{get-color('highlight')};
-  --color-theme-highlight-block: #{get-color('highlight')};
+  --color-stroke: #{get-color('dark')};
+  --color-theme-primary: #{get-color('dark')};
+  --color-theme-primary-glare: #{get-color('dark')};
+  --color-theme-highlight: #{get-color('light')};
+  --color-theme-highlight-block: #{get-color('light')};
+  --color-decor: #{get-color('dark')};
 }
 
-@include dark-mode() {
-  --color-bg: #{get-color('dark')};
-  --color-bg-glare: #{get-color('slate')};
-  --color-text: #{get-color('light')};
-  --color-selection-text: #{get-color('dark')};
-  --color-selection-bg: #{get-color('light')};
-  --color-stroke: #{get-color('slate')};
-  --color-theme-primary: #{lighten(get-color('primary'), 50%)};
-  --color-theme-primary-glare: #{lighten(get-color('primary-glare'), 50%)};
-  --color-action-bg: var(--color-theme-primary-glare);
-  --color-action-text: #{get-color('dark')};
-  --color-theme-highlight: #{get-color('highlight')};
-  --color-theme-highlight-block: #{get-color('slate')};
-  --color-theme-feature-text: #{get-color('highlight')};
-}
+// @include dark-mode() {
+//   --color-bg: #{get-color('dark')};
+//   --color-bg-glare: #{get-color('slate')};
+//   --color-text: #{get-color('light')};
+//   --color-selection-text: #{get-color('dark')};
+//   --color-selection-bg: #{get-color('light')};
+//   --color-stroke: #{get-color('slate')};
+//   --color-theme-primary: #{lighten(get-color('primary'), 50%)};
+//   --color-theme-primary-glare: #{lighten(get-color('primary-glare'), 50%)};
+//   --color-action-bg: var(--color-theme-primary-glare);
+//   --color-action-text: #{get-color('dark')};
+//   --color-theme-highlight: #{get-color('highlight')};
+//   --color-theme-highlight-block: #{get-color('slate')};
+//   --color-theme-feature-text: #{get-color('highlight')};
+// }
 
 body {
   color: var(--color-text);

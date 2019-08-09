@@ -1,0 +1,8 @@
+.highlight {
+  @supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
+    background: var(--color-highlight);
+    padding: 0.25rem 0.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+}

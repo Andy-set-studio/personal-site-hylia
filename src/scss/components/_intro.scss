@@ -1,17 +1,7 @@
 .intro {
-  background: var(--color-theme-highlight-block);
-
   &__summary {
     --flow-space: #{get-size(500)};
     font-size: get-size(500);
-
-    a:not([class]) {
-      color: currentColor;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
   }
 
   &__heading {
@@ -21,6 +11,11 @@
     &--compact {
       max-width: 20ex;
     }
+  }
+
+  // Fancy wrapping
+  @supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
+    background-image: var(--bg-dots);
   }
 
   .inner-wrapper {

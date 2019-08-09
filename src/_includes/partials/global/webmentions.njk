@@ -2,7 +2,7 @@
 {% set likes = webmentions | likesFilter(fullUrl) %}
 {% set mentions = webmentions | webmentionsFilter(fullUrl) %}
 
-<aside class="[ inner-wrapper ] [ pad-bottom-900 pad-bottom-900 text-500 ] [ sf-flow ]">
+<aside class="[ inner-wrapper ] [ pad-bottom-900 pad-bottom-900 text-500 ] [ desaturate ] [ sf-flow ]">
   {% if likes.length %}
     <h2>Likes</h2>
     <p id="likes-desc" class="visually-hidden">A list of people that have liked this page on social media or via their own blogs</p>
