@@ -1,0 +1,6 @@
+.dot-bg {
+  // Wrapped in supports because child elements need to be 'highlights' ideally
+  @supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
+    background-image: var(--bg-dots);
+  }
+}

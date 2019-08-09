@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  border: none;
+  border: 2px solid var(--color-action-stroke);
   background-color: var(--color-action-bg);
   color: var(--color-action-text);
   padding: get-size(300) get-size('base');
@@ -15,7 +15,8 @@
 
 .button:hover,
 .button:focus {
-  filter: brightness(1.2);
+  background: var(--color-action-hover-bg);
+  color: var(--color-action-hover-text);
 }
 
 .button:focus:hover {
@@ -23,8 +24,8 @@
 }
 
 .button:focus:not(:hover) {
-  outline: 1px solid var(--color-action-text);
-  outline-offset: -4px;
+  outline: 1px dotted var(--color-action-hover-text);
+  outline-offset: -6px;
 }
 
 .button:active {

@@ -2,16 +2,4 @@
   &__item {
     --flow-space: #{get-size(700)};
   }
-
-  &__link {
-    &,
-    &:visited {
-      color: var(--color-theme-primary);
-      text-decoration: none;
-    }
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
