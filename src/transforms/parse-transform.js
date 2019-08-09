@@ -15,6 +15,11 @@ module.exports = function(value, outputPath) {
       ...document.querySelectorAll('.post__body h2, .post__body h3')
     ];
     const articleEmbeds = [...document.querySelectorAll('main article iframe')];
+    const highlightWrapElements = [
+      ...document.querySelectorAll(
+        '.intro__summary > *, .intro__heading, .availability > *'
+      )
+    ];
 
     if (articleImages.length) {
       articleImages.forEach(image => {
@@ -68,6 +73,15 @@ module.exports = function(value, outputPath) {
           player.appendChild(embed.cloneNode(true));
 
           embed.replaceWith(player);
+        }
+      });
+    }
+
+    // Wrap highlight wrap elements in spans
+    if (highlightWrapElements.length) {
+      highlightWrapElements.forEach(element => {
+        if (element.innerHTML.indexOf('[ button ]') < 0) {
+          element.innerHTML = `<span class="highlight">${element.innerHTML}</span>`;
         }
       });
     }

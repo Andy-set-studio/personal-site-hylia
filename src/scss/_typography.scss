@@ -16,6 +16,20 @@ body {
   @include apply-utility('font', 'base');
 }
 
+a {
+  color: currentColor;
+  text-decoration-skip-ink: auto;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+:focus {
+  outline: 1px dotted;
+  outline-offset: 4px;
+}
+
 h1,
 h2,
 h3 {

@@ -2,7 +2,7 @@
   &__site-name {
     font-weight: 700;
     text-decoration: none;
-    color: var(--color-text);
+    color: currentColor;
 
     svg {
       width: get-size(800);

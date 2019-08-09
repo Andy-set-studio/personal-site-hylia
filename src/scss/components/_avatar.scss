@@ -4,6 +4,6 @@
   height: get-size(800);
   border-radius: get-size(800);
   object-fit: cover;
-  border: 1px solid get-color('mid');
+  border: 1px solid;
   flex-shrink: 0;
 }
