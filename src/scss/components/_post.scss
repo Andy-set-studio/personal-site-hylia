@@ -2,6 +2,8 @@
   &__body {
     --flow-space: #{get-size(800)};
 
+    @include apply-utility('font', 'body-serif');
+
     /**
      * Generic HTML styles 
      */
