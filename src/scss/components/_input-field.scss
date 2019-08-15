@@ -1,6 +1,8 @@
 .input-field {
   display: block;
   border: 1px solid get-color('mid');
+  border-radius: 0;
+  background: transparent;
   padding: get-size(300) get-size('base');
   font: inherit;
   font-size: get-size(500);
