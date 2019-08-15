@@ -1,6 +1,6 @@
 .input-field {
   display: block;
-  border: 1px solid get-color('mid');
+  border: 1px dotted var(--color-text);
   border-radius: 0;
   background: transparent;
   padding: get-size(300) get-size('base');
@@ -12,4 +12,9 @@
   margin: 0;
   white-space: normal;
   flex: auto;
+
+  &:focus {
+    outline: 1px solid var(--color-text);
+    outline-offset: 2px;
+  }
 }
