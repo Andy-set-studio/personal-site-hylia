@@ -19,6 +19,7 @@ permalink: feed/page/{{ pagination.pageNumber }}/index.html
 
 {% extends 'layouts/base.njk' %}
 {% set pageType = 'Updates Feed' %}
+{% set introHeading %}Updates: page {{ pagination.pageNumber + 1 }}{% endset %}
 
 {% if pagination.pageNumber > 0 %}
   {% set paginationPrevUrl = pagination.previousPageHref %}
@@ -31,10 +32,10 @@ permalink: feed/page/{{ pagination.pageNumber }}/index.html
 
 {% block content %}
   <main id="main-content" tabindex="-1">
+    {% include "partials/components/intro.njk" %}
     <section class="[ post-list ] [ gap-bottom-900 ]">
       <div class="[ inner-wrapper ] [ sf-flow ]">
-        <h1 class="[ post-list__heading ] [ text-700 md:text-800 ]">Updates</h1>
-        <ol class="[ post-list__items ] [ sf-flow ] [ pad-top-300 ]" reversed>
+        <ol class="[ post-list__items ] [ sf-flow ] [ pad-top-900 ]" reversed>
           {% for item in pagination.items %}
             <li class="post-list__item">
               <article class="[ post ] [ sf-flow ]">

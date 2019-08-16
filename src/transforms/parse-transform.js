@@ -25,6 +25,12 @@ module.exports = function(value, outputPath) {
       articleImages.forEach(image => {
         image.setAttribute('loading', 'lazy');
 
+        // Create a noise wrapper for images
+        const noiseWrapper = document.createElement('div');
+
+        noiseWrapper.setAttribute('class', 'noise-wrapper');
+        noiseWrapper.appendChild(image.cloneNode(true));
+
         // If an image has a title it means that the user added a caption
         // so replace the image with a figure containing that image and a caption
         if (image.hasAttribute('title')) {
@@ -35,10 +41,12 @@ module.exports = function(value, outputPath) {
 
           image.removeAttribute('title');
 
-          figure.appendChild(image.cloneNode(true));
+          figure.appendChild(noiseWrapper.cloneNode(true));
           figure.appendChild(figCaption);
 
           image.replaceWith(figure);
+        } else {
+          image.replaceWith(noiseWrapper);
         }
       });
     }

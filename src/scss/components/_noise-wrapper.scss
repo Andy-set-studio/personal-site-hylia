@@ -1,0 +1,47 @@
+.noise-wrapper {
+  position: relative;
+  overflow: hidden;
+  border: 1px dotted var(--color-stroke);
+
+  img {
+    display: block;
+    transition: filter 200ms ease;
+    filter: grayscale(1) contrast(1.5) brightness(1.5);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 200ms ease;
+  }
+
+  &::after {
+    background: url('https://hankchizljaw.imgix.net/dither.png?auto=format&q=60');
+    background-size: 18rem;
+    mix-blend-mode: multiply;
+    transform: scale(1.1) rotate(-1deg);
+    opacity: 0.3;
+  }
+
+  &::before {
+    background: var(--bg-dots);
+    opacity: 1;
+  }
+
+  &:hover {
+    img {
+      filter: none;
+    }
+
+    &::before,
+    &::after {
+      opacity: 0;
+    }
+  }
+}
