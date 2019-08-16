@@ -1,3 +1,7 @@
 .comments {
   --flow-space: #{get-size(800)} !important;
+
+  .noise-filter {
+    border-radius: 100%;
+  }
 }

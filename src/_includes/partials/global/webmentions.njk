@@ -25,7 +25,7 @@
     <ol class="[ sf-flow ] [ comments ]">
       {% for item in mentions %}
         <li>
-          <article class="[ box-flex ] [ h-cite ]" id="webmention-{{ webmention['wm-id'] }}">
+          <article class="[ box-flex align-start ] [ h-cite ]" id="webmention-{{ webmention['wm-id'] }}">
             <img 
               class="avatar"
               src="{{ item.author.photo | replace('https://webmention.io/avatar/', 'https://andy-bell-design-avatar.imgix.net/') }}" 
