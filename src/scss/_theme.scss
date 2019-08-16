@@ -52,3 +52,10 @@ main {
   color: var(--color-selection-text);
   background-color: var(--color-selection-bg);
 }
+
+// Remove dots for reduced motion
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --bg-dots: hsla(0, 0%, 50%, 0.5);
+  }
+}
