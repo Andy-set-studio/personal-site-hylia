@@ -1,5 +1,7 @@
 .comments {
-  --flow-space: #{get-size(800)} !important;
+  > * {
+    --flow-space: #{get-size(800)} !important;
+  }
 
   .noise-wrapper {
     border-radius: 100%;

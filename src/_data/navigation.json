@@ -11,16 +11,6 @@
       "rel": null
     },
     {
-      "text": "Feed",
-      "url": "/feed",
-      "rel": null
-    },
-    {
-      "text": "Patreon",
-      "url": "//www.patreon.com/andybelldesign",
-      "rel": "external"
-    },
-    {
       "text": "Twitter",
       "url": "//twitter.com/andybelldesign",
       "rel": "me"

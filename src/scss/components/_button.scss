@@ -3,14 +3,17 @@
   border: 2px solid var(--color-action-stroke);
   background-color: var(--color-action-bg);
   color: var(--color-action-text);
-  padding: get-size(300) get-size('base');
+  padding: 0.7rem 1rem 0.8rem 1rem;
   line-height: 1;
+  font-weight: 700;
   margin: 0;
   text-decoration: none;
   cursor: pointer;
   flex-shrink: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  @include apply-utility('font', 'sans');
 }
 
 .button:hover,
