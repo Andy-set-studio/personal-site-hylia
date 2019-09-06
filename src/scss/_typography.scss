@@ -9,11 +9,15 @@ body {
 a {
   color: currentColor;
   text-decoration-skip-ink: auto;
-  word-break: break-all;
 
   &:hover {
     text-decoration: none;
   }
+}
+
+p a,
+li a {
+  word-break: break-all;
 }
 
 :focus {
