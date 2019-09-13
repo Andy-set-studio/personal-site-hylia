@@ -31,7 +31,7 @@ permalink: /styleguide/
     }
 
     .color {
-      border: 1px dotted;
+      border: 1px dotted var(--color-text);
     }
 
     .bg-dark code {
@@ -49,30 +49,30 @@ permalink: /styleguide/
         <ul class="swatches">
           {% for color in styleguide.colors() %}
             <li class="sf-flow">
-              <div class="[ color ] [ pad-top-900 pad-bottom-900 ]" style="background: {{ color.value }}"></div>
-              <h3 class="font-base text-500">{{ color.key }}</h3>
+              <div class="[ color ] [ pad-top-max pad-bottom-max ]" style="background: {{ color.value }}"></div>
+              <h3 class="font-sans text-600">{{ color.key }}</h3>
               <dl class="props">
-                <dt>Value</dt>
+                <dt class="font-sans text-500">Value</dt>
                 <dd><code>{{ color.value }}</code></dd>
-                <dt>Sass function</dt>
+                <dt class="font-sans text-500">Sass function</dt>
                 <dd><code>get-color('{{ color.key }}')</code></dd>
-                <dt>Custom Property</dt>
+                <dt class="font-sans text-500">Custom Property</dt>
                 <dd><code>var(--color-{{ color.key }})</code></dd>
-                <dt>Text util class</dt>
+                <dt class="font-sans text-500">Text util class</dt>
                 <dd><code>color-{{ color.key }}</code></dd>
-                <dt>Background util class</dt>
+                <dt class="font-sans text-500">Background util class</dt>
                 <dd><code>bg-{{ color.key }}</code></dd>
               </dl>
             </li>
           {% endfor %}
         </ul>
         <h2>Fonts</h2>
-        <h3>Base — System stack</h3>
+        <h3>Sans — System stack</h3>
         <p class="sf-flow">
-          <span aria-hidden="true" role="presentation" class="font-base text-600 md:text-800 box-block leading-tight">The quick brown fox jumps over the lazy fox</span>
-          <code>.font-base</code>
+          <span aria-hidden="true" role="presentation" class="font-sans text-600 md:text-800 box-block leading-tight">The quick brown fox jumps over the lazy fox</span>
+          <code>.font-sans</code>
         </p>
-        <h3>Serif — Lora</h3>
+        <h3>Serif — Georgia</h3>
         <p class="sf-flow">
           <span aria-hidden="true" role="presentation" class="font-serif text-600 md:text-800 box-block leading-tight">The quick brown fox jumps over the lazy fox</span>
           <code>.font-serif</code>
