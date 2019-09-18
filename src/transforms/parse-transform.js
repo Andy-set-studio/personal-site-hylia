@@ -10,7 +10,9 @@ module.exports = function(value, outputPath) {
     });
 
     const document = DOM.window.document;
-    const articleImages = [...document.querySelectorAll('main article img')];
+    const articleImages = [
+      ...document.querySelectorAll('.post__body:not([class*="--presentation"]) img')
+    ];
     const articleHeadings = [
       ...document.querySelectorAll('.post__body h2, .post__body h3')
     ];

@@ -63,14 +63,16 @@
     pre > code,
     .video-player,
     .video-player + *,
-    video {
+    video,
+    &--presentation img {
       --flow-space: #{get-size('max')};
     }
 
     figure,
     pre > code,
     .video-player,
-    video {
+    video,
+    &--presentation img {
       width: 100vw;
       max-width: map-get($metrics, 'wrap-max-width');
       margin-left: 50%; /*changing this value to 47% removes the horizontal scrollbar once the viewport is < 930px */
@@ -82,7 +84,8 @@
 
     figure img,
     pre > code,
-    .video-player {
+    .video-player,
+    &--presentation img {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     }
 
@@ -104,6 +107,11 @@
       background: var(--color-dark);
       padding: get-size(700);
       font-size: get-size(500);
+    }
+
+    // Increase contrast on presentation slides a touch
+    &--presentation img {
+      filter: contrast(1.2);
     }
   }
 
