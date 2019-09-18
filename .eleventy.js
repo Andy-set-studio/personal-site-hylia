@@ -40,9 +40,13 @@ module.exports = function(config) {
 
   // Passthrough copy
   config.addPassthroughCopy('src/_redirects');
-  config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/images');
   config.addPassthroughCopy('src/js');
+
+  // Static legacy content
+  config.addPassthroughCopy('src/feed/page');
+  config.addPassthroughCopy('src/notes');
+  config.addPassthroughCopy('src/links');
 
   const now = new Date();
 
@@ -87,13 +91,12 @@ module.exports = function(config) {
   });
 
   config.addCollection('allFeed', function(collection) {
-    const notes = collection.getFilteredByTag('notes');
-    const links = collection.getFilteredByTag('links');
     const posts = collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts);
-    return [...notes, ...links, ...posts].sort((a, b) => {
+    return [...posts].sort((a, b) => {
       return new Date(b.date) - new Date(a.date);
     });
   });
+
   // Plugins
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
