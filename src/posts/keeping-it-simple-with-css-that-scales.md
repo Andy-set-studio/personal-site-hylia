@@ -256,7 +256,7 @@ What’s a design token? they scream: I’ll let my pal Jina explain them, becau
 
 These little classes are great for decoupling the scaffold of your UI from the design system. It enables the system to live away from the code context that you are in, which gives it great power.
 
-![The same heading of the card component has an arrow, showing it has '.font-brand' and '.text-600' tokens](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.058_js2tem.png)
+![The same heading of the card component has an arrow, showing it has '.font-brand' and '.text-600' tokens](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.059_eshwwr.png)
 
 The `.text-600` token is a reference to a size scale, just like [this one off my website](/styleguide). It uses a major-third scale which gives us that lovely curve between sizes.
 
