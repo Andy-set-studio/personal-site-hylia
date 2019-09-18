@@ -22,6 +22,7 @@ module.exports = function(value, outputPath) {
         '.intro__summary > *, .intro__heading, .availability > *'
       )
     ];
+    const presImages = [...document.querySelectorAll('.post__body--presentation img')];
 
     if (articleImages.length) {
       articleImages.forEach(image => {
@@ -49,6 +50,14 @@ module.exports = function(value, outputPath) {
           image.replaceWith(figure);
         } else {
           image.replaceWith(noiseWrapper);
+        }
+      });
+    }
+
+    if (presImages.length) {
+      presImages.forEach((image, index) => {
+        if (index > 0) {
+          image.setAttribute('loading', 'lazy');
         }
       });
     }

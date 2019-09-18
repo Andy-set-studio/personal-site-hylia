@@ -1,9 +1,18 @@
 ---
 layout: 'layouts/post.njk'
 title: 'Keeping it simple with CSS that scales'
-date: '2019-09-20'
+date: '2019-09-18'
 tags: 'writing'
 presentation: 'true'
+hasCodePen: true
+---
+
+This is the written version of my new talk, “Keeping it simple with CSS that scales”, which I first delivered at [State of the Browser 2019](https://2019.stateofthebrowser.com/).
+
+It’s a _very_ long read, so I recorded an audio version, too:
+
+<audio src="https://ia601400.us.archive.org/19/items/keeping-thing-simple-with-css-that-scales.mp3/keeping-thing-simple-with-css-that-scales.mp3" controls></audio>
+
 ---
 
 CSS has a weird place on the web today. There’s a lot of polarisation, with the opinion being seemingly split on “CSS sucks” and “CSS rules, learn it better, fools”.
@@ -12,7 +21,7 @@ CSS has a weird place on the web today. There’s a lot of polarisation, with th
 
 I empathise with the “CSS rules” camp and I’ll explain why: I have a theory as to why the “CSS sucks” camp have the attitude that they do. I think it’s a combination of them over-engineering their CSS, not fully understanding the power of CSS and finally, approaching it like it is a language like JavaScript and expecting it to work in the same way.
 
-What I’m going to do in this session, is tackle the first bit and talk to you all about how we can simplify CSS to give us incredible power, while also being as low-tech as possible. The secret sauce is that most of the content isn’t actually about CSS, but that’ll all become clearer, later.
+What I’m going to do in this piece, is tackle the first bit and talk to you all about how we can simplify CSS to give us incredible power, while also being as low-tech as possible. The secret sauce is that most of the content isn’t actually about CSS, but that’ll all become clearer, later.
 
 # Let’s talk about scale
 
@@ -40,11 +49,11 @@ I’ll also be bold and straight-up say that I don’t think using scale as an e
 
 # Four key things
 
-I think we can focus on four key things today, and for the rest of this talk, I’m going to run us through them in detail with a little progress thing, so you know roughly how much longer you have to endure me for.
+I think we can focus on four key things today, and for the rest of this piece, I’m going to run us through them in detail with a little progress thing, so you know roughly how much longer you have to endure me for.
 
 ![Don’t panic, Communicate, Consistency, Simplification](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.013_wwombv.png)
 
-I could package this up as _DCSS_ and really mop up the upvotes on that orange website, right?
+I could package this up as _DCCS_ and really mop up the upvotes on that orange website, right?
 
 Anyway, let’s dive in.
 
@@ -56,25 +65,25 @@ I know, that’s a proper rubbish synopsis, but you all didn’t come here to re
 
 The _actual_ Hitchhiker’s Guide to the Galaxy is a sort of interactive encyclopaedia—well, interactive by 1979 standards...
 
-The thing that has always resonated with me about the encyclopaedia is on the cover it says: “Don’t Panic”. The phrase is used _sooo many times_ throughout the story, even when the context very much calls for panic.
+The thing that has always resonated with me about the encyclopaedia is on the cover it says: “Don’t Panic”. The phrase is used _so many times_ throughout the story, even when the context very much calls for panic.
 
 ![Don’t panic](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.016_v2d0lc.png)
 
-I find myself really resonating with Ford Prefect, guiding Arthur Dent—a bumbling brit through the understandably mind-boggling adventure in space. Ford always approaches challenges in a calm, pragmatic way, just like the guide tells him to: “Don’t Panic” and I think that’s a takeaway for us too.
+I find myself really resonating with Ford Prefect, guiding Arthur Dent—a bumbling brit through the understandably mind-boggling adventure in space. Ford always approaches challenges in a calm, pragmatic way, just like the guide tells him to: “Don’t Panic”, and I think that’s a takeaway for us too.
 
 In fact, when Arthur first gets the book handed to him, he says:
 
 > “I like the cover...‘Don’t Panic’. It’s the first helpful or intelligible thing any-body’s said to me all day.“
 
-Right, anyway, I digress…“don’t panic”. It’s such good advice because when we panic, we make silly mistakes. Think about it: how many horrendous CSS hacks have you made when you’re up against-it in a project and you just needed to get it done. In fact, let’s have a show of hands of folks who slipped an `!important` into their code when up against it.
+Right, anyway, I digress…“don’t panic”. It’s such good advice because when we panic, we make silly mistakes. Think about it: how many horrendous CSS hacks have you made when you’re up against-it in a project and you just needed to get it done.
 
-See: a _lot_ of people do it and it’s because we’re panicking. The deadline is looming and there’s no time to work out why our CSS is borked, so we throw `!important` at it until it’s fixed.
+A _lot_ of people do it and it’s because we’re panicking. The deadline is looming and there’s no time to work out why our CSS is borked, so we throw `!important` at it until it’s fixed.
 
 ![A Wonga advert with 3 old people puppets, sat next to each other](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.019_ohpnnj.png)
 
-This is fine: we all do it, but what isn’t fine is technical debt. Often panic goes beyond a little hack here-and-there and escalates into something much more serious, like employing a CSS-in-JS framework, which is the equivalent of taking out a Wonga loan to pay of your house mortgage. Incredibly high interest technical debt, which frustratingly, the developers who took it out, only pay a bit off, because it’s mainly the user who takes the biggest hit, in terms of performance.
+This is fine: we all do it, but what isn’t fine is technical debt. Often panic goes beyond a little hack here-and-there and escalates into something much more serious, like employing a CSS-in-JS framework, which is the equivalent of taking out a Wonga loan to pay of your house mortgage.
 
-And this boggles my mind when you consider what we have available to us with modern CSS.
+Incredibly high interest technical debt, which frustratingly, the developers who took it out, only pay a bit off, because that developer has probably already gone and got a new job. It’s mainly the user who takes the biggest hit, in terms of performance, and this boggles my mind when you consider what we have available to us with modern CSS.
 
 ### The current state of CSS
 
@@ -84,15 +93,25 @@ Really, we’ve never had it better with CSS. We have CSS Grid with 93% support 
 
 We also get CSS Custom Properties which are native CSS variables. They’re incredibly handy for tokenising our CSS. Because they are also affected by the cascade, we can can override them, contextually. This makes them useful for theming, algorithms and display modes, such as dark mode.
 
-![CSS code with a Custom Property being set, with elements using it for styles](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.023_qb5ieh.png)
+```css
+:root {
+  --primary: #8e8e8e;
+}
+
+.box {
+  background: var(--primary);
+}
+
+.badge {
+  color: var(--primary);
+}
+```
 
 These are just a subset of powerful new features, but you can see how modern CSS is an incredibly powerful, effective styling tool. But it can come up a bit short, especially when you do have lots of CSS. So let's look at how we can deal with that.
 
-### Sass FTW
+### Sass for the win!
 
-All of this native functionality is cool as heck, right? Let’s not forget native nesting too, but who does all of the work when we use that?
-
-Yep: **the browser**!
+All of this native functionality is cool as heck, right? Let’s not forget native nesting too, but who does all of the work when we use that? Yep: **the browser**!
 
 In most cases, that’s fine, although the thought of native CSS terrifies me—especially when we are already kludging up the browser with heavy JavaScript frameworks.
 
@@ -116,7 +135,7 @@ The most important thing is that with Sass—well, SCSS, you’re writing CSS st
 
 We seem to be in an era where tools and methodologies are dreamed up to help avoid communicating with each other.
 
-Generated CSS class names is a classic example of this. Do you know how to get around naming collisions, like a human? A bit like this:
+Generated CSS class names is a classic example of this. It’s a very typical problem. Some might at this point start having an existential crisis, or dream of machine-generated classnames, but check this out: we’re going to try this novel thing called talking:
 
 ### Dev #1 - Lucrecia
 
@@ -130,6 +149,14 @@ Generated CSS class names is a classic example of this. Do you know how to get a
 
 > “Ah yeh, this very important reason. How about you call that component 'box' instead?”
 
+Now this important reason could be anything you dream up:
+
+- A stakeholder decision
+- A legacy codebase issue
+- A Design decision
+
+Importantly, Isabella, a professional, who knows how to communicate effectively, comes up with an alternative.
+
 ### Lucrecia
 
 > “That’s a great idea. Thanks!”
@@ -142,11 +169,11 @@ So-called “soft skills” which I prefer to call **core skills** are shunned i
 
 ### Documentation is everything
 
-Another incredible way to communicate that’s not actual talking is writing. I _love_ writing and you probably noticed, I do a lot of it... In fact, I write almost everything down because I never know when I might need it. It also helps me to commit stuff to memory.
+Another incredible way to communicate that’s not actual talking is writing. I _love_ writing and you probably noticed, I do a lot of it… In fact, I write almost everything down because I never know when I might need it. It also helps me to commit stuff to memory.
 
-There’s a real value in writing everything down—especially in a large team of front-end developers, writing CSS—or any code, really. You can document your thought-process and explain how and why you’ve don't things. You can write documentation so if another developer picks up your code, they know what’s going on.
+There’s a real value in writing everything down—especially in a large team of front-end developers, writing CSS—or any code, really. You can document your thought-process and explain how and why you’ve done things. You can write documentation, so if another developer picks up your code, they know what’s going on.
 
-By documentation, I don’t mean that you have to write reams and reams of structured docs. I’m talking goddamn comments in your code.
+By documentation, I don’t mean that you have to write reams and reams of structured docs: I’m talking goddamn comments in your code.
 
 Take this example:
 
@@ -211,13 +238,15 @@ Again, this keeps our component files light and skeletal.
 
 ## Utility
 
-This is a class that does one job and does it well—like a plumber or a tin opener. An example of a utility class is a one that centers text or applies some top margin. Simple, low-fidelity tools. Importantly, it means you can write common CSS and apply it where you need it, rather than repeating yourself over-and-over again.
+This is a class that does one job and does it well—like a plumber or a tin opener. An example of a utility class is a one that centers text or applies some top margin. Simple, low-fidelity tools.
+
+Importantly, it means you can write common CSS and apply it where you need it, rather than repeating yourself over-and-over again.
 
 ![The heading of the card component has an arrow, showing it has a '.weight-bold' utility](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.058_js2tem.png)
 
 ## Token
 
-This is actually a utility class, but a specific utility class that implements a design token.
+This is actually a utility class, but a specific utility class that implements a design token and is often generated by a separate tool.
 
 What’s a design token? they scream: I’ll let my pal Jina explain them, because they invented them!
 
@@ -253,7 +282,7 @@ Let’s start by talking about frameworks. Do you really need one? I don’t thi
 
 ![The Bootstrap logo](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.068_fa06xf.png)
 
-Bootstrap is an incredibly powerful framework. It came at a time when we were learning how to build responsive websites _and_ fighting relentless compatibility issues with browsers. It was a hellish time and Bootstrap, to its credit, made it all much easier. In fact, I’d go as far as saying that by accident, Bootstrap is one of the best design systems ever created.
+[Bootstrap](https://getbootstrap.com/) is an incredibly powerful framework. It came at a time when we were learning how to build responsive websites _and_ fighting relentless compatibility issues with browsers. It was a hellish time and Bootstrap, to its credit, made it all much easier. In fact, I’d go as far as saying that by accident, Bootstrap is one of the best design systems ever created.
 
 Using Bootstrap today—when we have actual native tools for layout, such as grid and flex—is like using a sledgehammer to crack an egg. It can also bring complications of its own, too. Because of the way it is built, it uses very global selectors to aggressively set styles. This results in stuff like this again:
 
@@ -263,7 +292,7 @@ Using Bootstrap today—when we have actual native tools for layout, such as gri
 }
 ```
 
-The same goes for most CSS frameworks to be honest. An example that gives me a heart attack is Tailwind CSS generates over **40 thousand lines of CSS by default** ([source](https://unpkg.com/tailwindcss@1.1.2/dist/tailwind.css)). Bonkers.
+The same goes for most CSS frameworks to be honest. An example that gives me a heart attack is [Tailwind CSS](https://tailwindcss.com/) generates over **40 thousand lines of CSS by default** ([source](https://unpkg.com/tailwindcss@1.1.2/dist/tailwind.css)). Bonkers.
 
 If you have a solid methodology like BEM, ITSCSS, SMACSS or even C-BEUT, you could sprinkle a bit of a grid system with, y'know GRID, add some layout helpers with flex and you are golden.
 
@@ -277,7 +306,7 @@ It’s been a really cool project and resonated with a lot of people, so go ahea
 
 On the subject of progressive enhancement, gather around and take a knee for a moment, everyone.
 
-<span style="text-transform: uppercase">**Don’t dismiss modern CSS because you have to support IE11**</span>
+<span style="text-transform: uppercase">**Don’t dismiss modern CSS because you have to support IE11**</span>.
 
 It’s a ridiculous mindset and it pisses me off whenever someone shares a cool trick on Twitter and a Chad will pop into the comments with “WhAt aboUt IE 11 tHOuGh”.
 
@@ -287,13 +316,13 @@ Stop trying to pixel push your designs and instead, use progressive enhancement 
 
 ![A three column, two row grid of grey boxes](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.082_kxkt6a.png)
 
-Take this example. We’ve got a good ol’ three column grid. In times gone by, we’d employ some hacks not just to lay it out, but also make it look like this in every browser.
+Take this example: we’ve got a good ol’ three column grid. In times gone by, we’d employ some hacks not just to lay it out, but also make it look like this in every browser.
 
-What I propose is that we take a step back, **simplify the problem**, and find a sensible baseline.
-
-Here it is: Good ol’ stacking with space. We can achieve 100% coverage with tiny amounts of CSS now.
+What I propose is that we take a step back, **simplify the problem**, and find a sensible baseline, and here it is: Good ol’ stacking with space. We can achieve 100% coverage with tiny amounts of CSS now.
 
 ![A vertical stack of 4 grey boxes](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.083_xbazps.png)
+
+This is a [handy little grid system](/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/) that uses minmax to distribute columns. It means we get a responsive grid with **no media queries**.
 
 ```css
 .auto-grid {
@@ -302,8 +331,6 @@ Here it is: Good ol’ stacking with space. We can achieve 100% coverage with ti
   grid-gap: 1rem;
 }
 ```
-
-This is a [handy little grid system](/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/) that uses minmax to distribute columns. It means we get a responsive grid with **no media queries**.
 
 But, grid still isn’t quite full supported, but thanks to CSS’s nature, it’ll ignore stuff it doesn’t understand and move on, so we can add this below our grid code:
 
@@ -323,7 +350,9 @@ Now, thanks to `@supports`, we can reset some of that where there is support. If
 
 It's 22 lines of CSS, with no hacks and works all the way back to IE9 (and probably beyond).
 
-![A vertical stack of 4 grey boxes in IE9](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.083_xbazps.png)
+![A vertical stack of 4 grey boxes in IE9](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.088_nw7okb.png)
+
+{% codepen 'xxKdvwy', 'result', 'Progressively enhanced, media query-free grid' %}
 
 ### Slow down
 
@@ -335,8 +364,10 @@ I came a cropper to this earlier in the year. I was working on a massive system/
 
 We had two or three grid systems, some fluid type and some utility driven type that conflicted **and** a card component that was pretty much a website in itself. If I had slowed down and stepped back, I could have seen these problems, but I didn’t. So seriously, slow down and you will save so much time.
 
-I’ll leave you with this take-home advice: instead of moving fast and breaking things, move slowly and deliberately instead.
+I’ll leave you with this take-home advice: **instead of moving fast and breaking things, move slowly and deliberately instead**.
 
 ---
 
 You can watch me deliver this talk at [State of the Browser 2019, here](https://www.youtube.com/watch?v=byAaV3sy5qc&t).
+
+You can see the [slide deck from that presentation, here](https://noti.st/hankchizljaw/D6LsJD/keeping-it-simple-with-css-that-scales).
