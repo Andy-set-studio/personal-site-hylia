@@ -3,7 +3,7 @@ title: 'Projects'
 permalink: '/projects/index.html'
 ---
 
-I make _a lot_ of stuff, so this is an ever updating list of selected projects, ordered from new to old.
+I make _a lot_ of stuff, so this is an ever updating list of selected projects, roughly ordered from new to old.
 
 ***
 
