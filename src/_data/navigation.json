@@ -11,6 +11,11 @@
       "rel": null
     },
     {
+      "text": "Projects",
+      "url": "/projects/",
+      "rel": null
+    },
+    {
       "text": "Twitter",
       "url": "//twitter.com/hankchizljaw",
       "rel": "me"
