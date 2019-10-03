@@ -82,11 +82,12 @@ select {
   font: inherit;
 }
 
-/* Remove _all_ animations and transitions for people that prefer not to see them */
+/* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-play-state: paused !important;
-    transition: none !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -197,14 +198,17 @@ Another thing I’ve finally been brave enough to set as default is `font: inher
 ```css
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-play-state: paused !important;
-    transition: none !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 ```
 
 Last, and by no means least, is a single `@media` query that resets animations, transitions and scroll behaviour if the [user prefers reduced motion](https://css-tricks.com/introduction-reduced-motion-media-query/). I like this in the reset, with [specificity trumping](https://hankchizljaw.com/wrote/css-specificity-and-the-cascade/) `!important` selectors, because most likely now, if a user doesn’t want motion, they won’t get it, regardless of the CSS that follows this reset.
+
+ℹ️ **Update**: _Thanks to [@atomiks](https://github.com/atomiks), this has [been updated](https://github.com/hankchizljaw/modern-css-reset/pull/6) so it doesn’t break JavaScript events watching for `animationend` and `transitionend`._
 
 ## Wrapping up
 
