@@ -4,6 +4,10 @@ date: '2019-10-01'
 tags: ['writing']
 ---
 
+<small>🇯🇵 _If you would prefer to read this article in Japanese, head [over here](https://coliss.com/articles/build-websites/operation/css/a-modern-css-reset.html), where [コリス](https://twitter.com/colisscom) has very kindly translated it for me_.</small> 
+
+***
+
 I think about and enjoy very boring CSS stuff—probably much more than I should do, to be honest. One thing that I’ve probably spent too much time thinking about over the years, is CSS resets.
 
 In this modern era of web development, we don’t really need a heavy-handed reset, or even a reset at all, because CSS browser compatibility issues are much less likely than they were in the old IE 6 days. That era was when resets such as [normalize.css](https://github.com/necolas/normalize.css/) came about and saved us all heaps of hell. Those days are gone now and we can trust our browsers to behave more, so I think resets like that are probably mostly redundant.
