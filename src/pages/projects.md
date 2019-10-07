@@ -7,6 +7,12 @@ I make _a lot_ of stuff, so this is an ever updating list of selected projects, 
 
 ***
 
+## Modern CSS Reset 
+
+A bare-bones CSS reset for modern web development.
+
+<https://github.com/hankchizljaw/modern-css-reset>
+
 ## Companies that work with ICE
 
 An open source list of companies that have, or currently work with ICE.
