@@ -13,6 +13,8 @@ A bare-bones CSS reset for modern web development.
 
 <https://github.com/hankchizljaw/modern-css-reset>
 
+***
+
 ## Companies that work with ICE
 
 An open source list of companies that have, or currently work with ICE.
