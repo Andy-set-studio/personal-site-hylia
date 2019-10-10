@@ -4,11 +4,12 @@ date: '2019-10-10'
 tags: ['writing']
 hasCodePen: true
 presentation: 'true'
+permalink: '/wrote/the-p-in-progressive-enhancement-stands-for-pragmatism/index.html'
 ---
 
 I often think of IE11 as a rancid smog that follows us around, spoiling things. This is not me criticising the browser, though. Instead, I’m referencing how it follows progress on the web around, hindering it.
 
-I’m also seemingly putting the blame on the browser for that, too, but no: that blame sits firmly on the shoulders of the web community. Nearly every time some modern CSS is talked about in the hellish vacuum of sensible discourse: Twitter, you can set your watch by the <dfn id="ttwa-def">TTWAI</dfn>, which is “Time To What About IE11”?
+I’m also seemingly putting the blame on the browser for that, too, but no: that blame sits firmly on the shoulders of the web community. Nearly every time some modern CSS is talked about in the hellish vacuum of sensible discourse: Twitter, you can set your watch by the <dfn id="ttwa-def">TTWAI</dfn>, which is “Time To What About IE11?”.
 
 ![Hipster, probably called Turd Buckman, says “WhAt aboUt IE 11 tHOuGh”](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.081_allu7h.png)
 
