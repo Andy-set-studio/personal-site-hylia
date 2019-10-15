@@ -24,6 +24,11 @@ pre[class*='language-'] {
   hyphens: none;
 }
 
+pre[class*='language-'] ::selection {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
 /* Inline code */
 :not(pre) > code[class*='language-'] {
   padding: 0.1em;
