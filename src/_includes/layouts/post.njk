@@ -25,7 +25,6 @@
       <div class="[ post__body {{ bodyModifier }} ] [ inner-wrapper ] [ leading-loose pad-top-900 {{ 'pad-bottom-900' if not site.enableThirdPartyComments }} text-500 md:text-600 ] [ sf-flow ] [ e-content ]">
         {{ content | safe }}
       </div>
-      {% include "partials/global/webmentions.njk" %}
       {% include "partials/global/availability.njk" %}
       {% if site.enableThirdPartyComments %}
         <hr />
