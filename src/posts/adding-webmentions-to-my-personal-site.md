@@ -4,6 +4,12 @@ date: '2019-07-05'
 tags: ['indieweb', 'webmentions']
 ---
 
+_**Update 21 October 2019**: I decided to remove these from my site as monitoring and moderating them became a lot of work on popular articles. I think the tech is cool as heck, it’s just not for me at this time._
+
+_I might pick it up again in the future without the Twitter integrations. Hopefully this article will be useful for you, regardless of my choice!_ 
+
+---
+
 I think Webmentions are cool because they are a proper web standard, so I’ve been keen to get them going on my site—especially after I [burned it to the ground](https://andy-bell.design/wrote/eating-my-own-dog-food/) and replaced it with an instance of [Hylia](https://hylia.website).
 
 I’ve had [Max’s tutorial](https://mxb.dev/blog/using-webmentions-on-static-sites/) bookmarked for _ages_ and it is a fantastic resource. I basically followed it to the letter, with a couple of modifications to match the code style of this site. If you’re looking to implement yourself, definitely head over to his site.
