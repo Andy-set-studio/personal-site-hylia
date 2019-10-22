@@ -23,7 +23,7 @@ I empathise with the “CSS rules” camp and I’ll explain why: I have a theor
 
 What I’m going to do in this piece, is tackle the first bit and talk to you all about how we can simplify CSS to give us incredible power, while also being as low-tech as possible. The secret sauce is that most of the content isn’t actually about CSS, but that’ll all become clearer, later.
 
-# Let’s talk about scale
+## Let’s talk about scale
 
 !['Scale' is bollocks, most of the time](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.006_kuw6cr.png)
 
@@ -47,7 +47,7 @@ Let’s be honest for a moment, folks: most of the tepid guff that these tech br
 
 I’ll also be bold and straight-up say that I don’t think using scale as an excuse for over-engineering stuff—especially CSS—is acceptable, even for huge teams that work on huge products. Keep that in mind, because I hope, by the end of this session, you’re going to be in agreement with me.
 
-# Four key things
+## Four key things
 
 I think we can focus on four key things today, and for the rest of this piece, I’m going to run us through them in detail with a little progress thing, so you know roughly how much longer you have to endure me for.
 
@@ -57,7 +57,7 @@ I could package this up as _DCCS_ and really mop up the upvotes on that orange w
 
 Anyway, let’s dive in.
 
-## Don’t panic
+### Don’t panic
 
 One of my favourite books is The Hitchhiker’s Guide to the Galaxy. It’s about the earth being blown up to make way for a hyperspace highway and our main character, Arthur Dent proceeds to hitchhike around space with his alien guide, Ford Prefect.
 
@@ -131,21 +131,21 @@ The most important thing is that with Sass—well, SCSS, you’re writing CSS st
 
 ![A word cloud containing: tree-shaking, linting, variables, componenents, portability, DX. The words are wrapped around the Sass logo](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.032_bdd6zl.png)
 
-## Communicate
+### Communicate
 
 We seem to be in an era where tools and methodologies are dreamed up to help avoid communicating with each other.
 
 Generated CSS class names is a classic example of this. It’s a very typical problem. Some might at this point start having an existential crisis, or dream of machine-generated classnames, but check this out: we’re going to try this novel thing called talking:
 
-### Dev #1 - Lucrecia
+#### Dev #1 - Lucrecia
 
 > “This component I came up with already exists. Let me have a quick look in git and see who created it. Ah, it was Isabella”
 
-### Lucrecia to Dev #2, Isabella
+#### Lucrecia to Dev #2, Isabella
 
 > “Hey, Dev Isabella, is there a reason why this component is called 'block'?”
 
-### Isabella to Lucrecia
+#### Isabella to Lucrecia
 
 > “Ah yeh, this very important reason. How about you call that component 'box' instead?”
 
@@ -157,7 +157,7 @@ Now this important reason could be anything you dream up:
 
 Importantly, Isabella, a professional, who knows how to communicate effectively, comes up with an alternative.
 
-### Lucrecia
+#### Lucrecia
 
 > “That’s a great idea. Thanks!”
 
@@ -167,7 +167,7 @@ How wholesome was that?? It’s amazing what happens when we <span style="text-t
 
 So-called “soft skills” which I prefer to call **core skills** are shunned in favour of being able to build your own linked-list or do fizz buzz on a whiteboard. This winds me up because to be an effective member of a team, _you have to be able to communicate_, whereas the only time you ever do fizz buzz in the real world is during that life-draining interview process…
 
-### Documentation is everything
+#### Documentation is everything
 
 Another incredible way to communicate that’s not actual talking is writing. I _love_ writing and you probably noticed, I do a lot of it… In fact, I write almost everything down because I never know when I might need it. It also helps me to commit stuff to memory.
 
@@ -204,7 +204,7 @@ A win-win in my books!
 
 Right, enough of me yammering on about how to be functioning adults for a minute, because I’m this far into this piece and I’ve not talked about how to write CSS yet. Let’s do it.
 
-## Consistency
+### Consistency
 
 I think consistency is key to scaling CSS (sorry I said scale again). Really, this is what these over-abstractions are trying to give you, in my opinion, they just go way too far.
 
@@ -212,19 +212,19 @@ I use a methodology that is sort of a devolution of BEM—a simplified version. 
 
 ![C-BEUT, as described above](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.049_uscvwg.png)
 
-### Cascade
+#### Cascade
 
 The “C” in CSS stands for “Cascading”. Cascade is my favourite part of CSS because if you use it right, you can write very little CSS and get really good results in return. With this methodology, cascade is the first port of call. I set sensible defaults, higher level theming and typography as high up as I can. This gives us so much power.
 
 The components can then be much more skeletal and deal only with how they are different than the globals, rather than dealing with everything.
 
-### Block
+#### Block
 
 This is your component, your card or your button. It’s the building block of your user interface. And that's about it really—a construct and nothing else.
 
 ![A card component with a '.card' label](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.055_yykqm7.png)
 
-### Element
+#### Element
 
 This is something that is a dependent of your block—a child element. It always lives in its parent block. A good example of this is within your card, you might have a `card__image`.
 
@@ -236,7 +236,7 @@ Again, this keeps our component files light and skeletal.
 
 ![A zoomed in view of the card shows that space is distributed equally using a lobotomised owl selector](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.057_pmmipt.png)
 
-## Utility
+#### Utility
 
 This is a class that does one job and does it well—like a plumber or a tin opener. An example of a utility class is a one that centers text or applies some top margin. Simple, low-fidelity tools.
 
@@ -244,7 +244,7 @@ Importantly, it means you can write common CSS and apply it where you need it, r
 
 ![The heading of the card component has an arrow, showing it has a '.weight-bold' utility](https://res.cloudinary.com/andybelldesign/image/upload/c_scale,f_auto,w_1400/v1568725444/keeping-it-simple-with-css-that-scales/presentation.058_js2tem.png)
 
-## Token
+#### Token
 
 This is actually a utility class, but a specific utility class that implements a design token and is often generated by a separate tool.
 
@@ -274,7 +274,7 @@ One thing I will say about methodologies is that if you find yourself restricted
 
 Always be open to change. We live in a dynamic world and work in an incredibly dynamic industry. **If you stick to your guns too tightly, you’re probably going to end up causing more problems not just for yourself, but everyone else, in the future**.
 
-## Simplification
+### Simplification
 
 It’d be wild if I did a presentation, titled “Keeping it simple with CSS that scales” and didn’t talk about simplification, wouldn’t it?
 
