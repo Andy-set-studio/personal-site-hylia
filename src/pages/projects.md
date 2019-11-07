@@ -7,6 +7,22 @@ I make _a lot_ of stuff, so this is an ever updating list of selected projects, 
 
 ***
 
+## Front-End Challenges Club
+
+Quick, fun challenges and solutions to help you to master front-end development.
+
+<https://front-end-challenges.club/>
+
+***
+
+## Jotter
+
+A tiny little progressively enhanced jot pad progressive web app.
+
+<https://jotter.space/>
+
+***
+
 ## Modern CSS Reset 
 
 A bare-bones CSS reset for modern web development.
