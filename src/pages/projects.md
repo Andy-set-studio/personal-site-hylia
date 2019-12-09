@@ -185,6 +185,6 @@ TypeMate is a little JavaScript module that fixes your typesetting woes automati
 
 Boilerform is a little HTML and CSS boilerplate to take the pain away from working with forms.
 
-<https://boilerform.design>
+<https://boilerform.hankchizljaw.com>
 
 
