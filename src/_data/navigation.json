@@ -16,6 +16,11 @@
       "rel": null
     },
     {
+      "text": "Micro Blog",
+      "url": "//microblog.hankchizljaw.com",
+      "rel": "external"
+    },
+    {
       "text": "Twitter",
       "url": "//twitter.com/hankchizljaw",
       "rel": "me"
