@@ -37,6 +37,7 @@ module.exports = function(config) {
   config.addShortcode('codepen', codepen);
 
   // Passthrough copy
+  config.addPassthroughCopy('src/assets');
   config.addPassthroughCopy('src/_redirects');
   config.addPassthroughCopy('src/images');
   config.addPassthroughCopy('src/js');

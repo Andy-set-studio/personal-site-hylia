@@ -1,0 +1,322 @@
+﻿WEBVTT
+
+1
+00:00:01.250 --> 00:00:04.970
+<v ->This is a quick look at this homepage</v>
+
+2
+00:00:04.970 --> 00:00:06.603
+for Front-End Challenges Club.
+
+3
+00:00:08.240 --> 00:00:11.270
+It's a look and feel video.
+
+4
+00:00:11.270 --> 00:00:13.140
+There's no other feedback that's required.
+
+5
+00:00:13.140 --> 00:00:16.530
+The only feedback we need from this is,
+
+6
+00:00:16.530 --> 00:00:18.140
+how do you feel about the look and feel,
+
+7
+00:00:18.140 --> 00:00:20.190
+the colors, the typography, the spacing?
+
+8
+00:00:20.190 --> 00:00:23.200
+All the things that make it look like it does.
+
+9
+00:00:23.200 --> 00:00:25.140
+Do we like the color?
+
+10
+00:00:25.140 --> 00:00:26.750
+All that sort of thing.
+
+11
+00:00:26.750 --> 00:00:28.100
+In terms of functionality,
+
+12
+00:00:28.100 --> 00:00:30.940
+we don't need to worry so much about that right now.
+
+13
+00:00:30.940 --> 00:00:33.550
+We just need feedback on the look and feel
+
+14
+00:00:33.550 --> 00:00:35.460
+and why things are being put together.
+
+15
+00:00:35.460 --> 00:00:37.730
+So let me quickly explain what's going on.
+
+16
+00:00:37.730 --> 00:00:39.110
+So you got your standard header at the top
+
+17
+00:00:39.110 --> 00:00:40.980
+with some navigation links.
+
+18
+00:00:40.980 --> 00:00:43.100
+And there's a primary call to action, straight away.
+
+19
+00:00:43.100 --> 00:00:45.823
+The sign up, and that's a really common pattern.
+
+20
+00:00:47.170 --> 00:00:49.450
+We're sticking it straight in there.
+
+21
+00:00:49.450 --> 00:00:50.283
+Then you got the intro,
+
+22
+00:00:50.283 --> 00:00:52.020
+so you got what the name of the project is,
+
+23
+00:00:52.020 --> 00:00:52.880
+Front-End Challenges Club.
+
+24
+00:00:52.880 --> 00:00:54.643
+And there's a quick summary, so, "Quick, fun challenges
+
+25
+00:00:54.643 --> 00:00:57.737
+"and solutions to help you to master front-end development.
+
+26
+00:00:57.737 --> 00:00:58.820
+"Sign up now."
+
+27
+00:00:58.820 --> 00:01:01.563
+Then this is important, for the two price points.
+
+28
+00:01:01.563 --> 00:01:06.563
+$10 per month or $95 per year.
+
+29
+00:01:07.170 --> 00:01:08.230
+Sign up.
+
+30
+00:01:08.230 --> 00:01:11.060
+So that's trying to immediately catch a user,
+
+31
+00:01:11.060 --> 00:01:13.810
+or a potential user, and get them straight in the door.
+
+32
+00:01:15.040 --> 00:01:16.520
+Then in the second column,
+
+33
+00:01:16.520 --> 00:01:18.673
+we've got what the current challenge is.
+
+34
+00:01:18.673 --> 00:01:20.840
+So the latest challenge.
+
+35
+00:01:20.840 --> 00:01:24.820
+This one is challenge number four, Progress Button.
+
+36
+00:01:24.820 --> 00:01:27.240
+And then we've got, this is all grouped together,
+
+37
+00:01:27.240 --> 00:01:29.990
+because the challenge has got a related solution to it.
+
+38
+00:01:31.340 --> 00:01:35.760
+We've got View Challenge and then Learn Solution.
+
+39
+00:01:35.760 --> 00:01:37.900
+And then the iconography here is on the challenge,
+
+40
+00:01:37.900 --> 00:01:40.900
+being the mountains, so this is something to overcome.
+
+41
+00:01:40.900 --> 00:01:42.490
+And then the compass being the solution,
+
+42
+00:01:42.490 --> 00:01:44.490
+sort of guiding and ensuring then where to build them.
+
+43
+00:01:44.490 --> 00:01:47.913
+So that's where I teach them how to use it.
+
+44
+00:01:49.050 --> 00:01:51.893
+Then you got, after that, Recent Challenges:
+
+45
+00:01:52.960 --> 00:01:56.053
+Duotone Card, Toggle Switch, Email Sign-up Forms.
+
+46
+00:01:57.750 --> 00:02:00.110
+This gives someone an opportunity landing
+
+47
+00:02:00.110 --> 00:02:02.360
+to just have a quick look at the other content, as well.
+
+48
+00:02:02.360 --> 00:02:03.860
+So you could limit this, to say, six,
+
+49
+00:02:03.860 --> 00:02:05.590
+so you got a nice grid,
+
+50
+00:02:05.590 --> 00:02:08.200
+once you got some more stuff going on there.
+
+51
+00:02:08.200 --> 00:02:11.470
+And then it just helps them to get a feel
+
+52
+00:02:11.470 --> 00:02:12.960
+for the challenges, at least, anyway.
+
+53
+00:02:12.960 --> 00:02:16.600
+The solutions are all pay walled.
+
+54
+00:02:16.600 --> 00:02:19.460
+So then, then there's the last opportunity
+
+55
+00:02:19.460 --> 00:02:20.293
+there at the bottom.
+
+56
+00:02:20.293 --> 00:02:22.120
+Now I've reversed the colors.
+
+57
+00:02:22.120 --> 00:02:25.150
+I've gone for the magenta as the primary background color
+
+58
+00:02:25.150 --> 00:02:29.610
+and then using the same treatment as the intro here,
+
+59
+00:02:29.610 --> 00:02:31.020
+sign up for membership.
+
+60
+00:02:31.020 --> 00:02:35.080
+This is the second chance of trying to get a user in.
+
+61
+00:02:35.080 --> 00:02:37.390
+Then you've got columns of content here,
+
+62
+00:02:37.390 --> 00:02:38.597
+you've got, "Front-End Challenges Club members
+
+63
+00:02:38.597 --> 00:02:40.980
+"get all sorts of benefits including."
+
+64
+00:02:40.980 --> 00:02:42.347
+So then you get, "Full access content,
+
+65
+00:02:42.347 --> 00:02:44.227
+"access to private community members,
+
+66
+00:02:44.227 --> 00:02:48.120
+"access to exclusive AMA sessions."
+
+67
+00:02:48.120 --> 00:02:50.610
+And then again, the more we reiterate,
+
+68
+00:02:50.610 --> 00:02:55.610
+that memberships start at $10 per month or $95 per year.
+
+69
+00:02:56.090 --> 00:02:57.263
+Sign up for membership.
+
+70
+00:02:58.165 --> 00:03:00.670
+And then you got your standard footer going on here
+
+71
+00:03:00.670 --> 00:03:04.323
+with the Privacy Policy, Code of Conduct link, et cetera.
+
+72
+00:03:05.650 --> 00:03:09.660
+Again, reminder, the feedback that we need from this video
+
+73
+00:03:09.660 --> 00:03:14.420
+is just what you're feeling about the look and feel.
+
+74
+00:03:14.420 --> 00:03:17.470
+Don't rush the feedback, think about it.
+
+75
+00:03:17.470 --> 00:03:20.453
+I can progress with other work in the meantime.
+
+76
+00:03:21.670 --> 00:03:23.600
+Take your time, think about what you like,
+
+77
+00:03:23.600 --> 00:03:24.603
+what you don't like.
+
+78
+00:03:26.110 --> 00:03:27.540
+Yeah, let me know your thoughts,
+
+79
+00:03:27.540 --> 00:03:31.050
+and again feel free to record a screencast like this.
+
+80
+00:03:31.050 --> 00:03:32.053
+Take care, see ya!
+

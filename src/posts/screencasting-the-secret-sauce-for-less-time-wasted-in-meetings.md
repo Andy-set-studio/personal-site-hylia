@@ -35,7 +35,7 @@ I tend to follow a structure like this:
 
 Here’s a quick demo of how I produce this sort of screencast. I obviously can’t show you a real client one, so instead, I’m presenting one of my own products, [Front-End Challenges Club](https://front-end-challenges.club/).
 
-<figure><video controls src="https://player.vimeo.com/external/384011086.hd.mp4?s=a0bce15bde64512c18e8b3bbf1d622a41a03b58b&profile_id=175"></video><figcaption>(Captions are currently being produced externally for me for this video and they will be available soon. Can’t see the video? <a href="https://vimeo.com/384011086">Go straight to Vimeo to watch it there</a>.)</figcaption></figure>
+<figure><video controls src="https://player.vimeo.com/external/384011086.hd.mp4?s=a0bce15bde64512c18e8b3bbf1d622a41a03b58b&profile_id=175"><track src="/assets/captions/client-screencast-example.vtt" label="English" type="captions" srclang="en" /></video><figcaption>(Can’t see the video? <a href="https://vimeo.com/384011086">Go straight to Vimeo to watch it there</a>.)</figcaption></figure>
 
 ## Wrapping up
 
