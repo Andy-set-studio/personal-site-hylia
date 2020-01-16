@@ -26,7 +26,7 @@ The second reason is that especially with design work, a presentation meeting ca
 
 I tend to follow a structure like this:
 
-1. Explain why I’m recording this screencast: “Hey folks, this is the early look and feel of `{projectName}`, so I wanted to give you all a sneak peak and get feedback”.
+1. Explain why I’m recording this screencast: “Hey folks, this is the early look and feel of `{projectName}`, so I wanted to give you all a sneak peek and get feedback”.
 2. Explain what feedback you want from them: “What I need from you is feedback **only** on the colours, typography and layout”.
 3. The main body of the video where I present the work with explanations of each part: “This is the homepage. I chose X colours because of Y”.
 4. Lastly, I remind them of the type of feedback I need from them and **super importantly**, I tell them that they don’t need to rush that feedback: “Remember: the only feedback I need from you is on the colours, typography and layout. We can cover the other parts later in the project”.
