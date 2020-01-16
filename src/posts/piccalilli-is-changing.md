@@ -18,4 +18,4 @@ I’ve closed down the newsletter and [archived all of the issues](//piccalil.li
 
 For now, thank you all so much in believing in this project and especially thank you to those who I featured in the issues. Your work inspires the heck out of me.
 
-I just know you’re going to love the changes to this project and what it’s going to eventually evolve into. I’m super excited and I should getting cracking, pronto.
+I just know you’re going to love the changes to this project and what it’s going to eventually evolve into. I’m super excited and I should get cracking, pronto.
