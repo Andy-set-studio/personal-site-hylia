@@ -7,4 +7,6 @@ socialImage: 'https://hankchizljaw.imgix.net/social-share.png'
 metaTitle: 'Andy Bell - Freelance Web Designer and Developer'
 ---
 
-I’m a freelance web designer who’s trying to make everyone’s experience on the web better with a focus on CSS, progressive enhancement, accessibility and design systems.
+I’m an educator who focuses on design, front-end development, accessibility and progressive enhancement. I teach at [Piccalilli](https://piccalil.li/) and [Front-End Challenges Club](https://front-end-challenges.club/).
+
+I’m also available for short, freelance front-end development projects.
