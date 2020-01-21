@@ -13,6 +13,8 @@ For my editor and terminal font, I use [Operator Mono](https://www.typography.co
 
 I use [VS Code](https://code.visualstudio.com/) and/or [Sublime Merge](https://www.sublimemerge.com/) if things get a bit hairy. I also like to have a go with [Sublime Text](https://www.sublimetext.com/) sometimes, for old times sake.
 
+I use [IA Writer](https://ia.net/writer) for writing nearly all content. It’s a super good, focused writing tool.
+
 ## Computer stuff
 
 I have a [2019 16” MacBook Pro](https://www.apple.com/uk/macbook-pro-16/) with an 8 core i9 processor, 1TB SSD drive and 32GB of RAM. It’s by far the best Mac I’ve ever had and I’ve been a Mac user since the original weird coloured iMacs! 
