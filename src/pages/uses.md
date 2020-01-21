@@ -46,4 +46,4 @@ I like plants and have a Bonsai Tree, some succulents and a dangly boi which I h
 
 It’d be rude not to show y’all the office, so here it is! 
 
-![My office desk with all of the above described items](https://hankchizljaw.imgix.net/IMG_0300.jpg?auto=format&q=60&sat=-30&con=20 ")
+![My office desk with all of the above described items](https://hankchizljaw.imgix.net/IMG_0300.jpg?auto=format&q=60&sat=-30&con=20)
