@@ -37,4 +37,4 @@ This approach of chillies and badges is giving me loads of creative freedom, bec
 
 ## Wrapping up
 
-This is just a short post about the logo specifically because I thought someone might find the process useful. [Go and read about why this has all started](/piccalilli-the-future) and then [sign up for updates](https://piccalil.li/) 🚀
+This is just a short post about the logo specifically because I thought someone might find the process useful. [Go and read about why this has all started](https://hankchizljaw.com/wrote/piccalilli:-the-future/) and then [sign up for updates](https://piccalil.li/) 🚀
