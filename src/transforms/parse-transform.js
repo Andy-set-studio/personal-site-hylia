@@ -19,7 +19,7 @@ module.exports = function(value, outputPath) {
     const articleEmbeds = [...document.querySelectorAll('main article iframe')];
     const highlightWrapElements = [
       ...document.querySelectorAll(
-        '.intro__summary > *, .intro__heading, .availability > *'
+        '.intro__summary > *, .intro__heading, .availability h2, .availability div > p'
       )
     ];
     const presImages = [...document.querySelectorAll('.post__body--presentation img')];
