@@ -8,7 +8,7 @@ tags: ['writing']
 
 **Update - 6 February, 2020**: Gatsby have now clarified their position by
 deleting _“a single image is often bigger than a JavaScript bundle”_, only with
-no clarification on why. As is increasingly the case, `trust--`.
+no explanation on why. As is increasingly the case, `trust--`.
 
 ---
 
