@@ -4,6 +4,14 @@ date: '2020-02-05'
 tags: ['writing']
 ---
 
+---
+
+**Update - 6 February, 2020**: Gatsby have now clarified their position by
+deleting _“a single image is often bigger than a JavaScript bundle”_, only with
+no clarification on why. As is increasingly the case, `trust--`.
+
+---
+
 There’s an article circulating, titled [Why Gatsby is better with
 JavaScript](https://www.gatsbyjs.org/blog/2020-01-30-why-gatsby-is-better-with-javascript/),
 which boils down as a justification for why the framework produces so much JavaScript output. This
