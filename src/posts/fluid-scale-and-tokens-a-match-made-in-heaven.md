@@ -60,6 +60,13 @@ This is because at smaller screens, the `900` item in the scale (`3.05rem`) is t
 
 With this new approach, I’d just use `text-900`, because I would have generated a fluid scale. This cuts down on generated classes, and importantly, media-queries, while simplifying the process of implementing a type scale. It _also_ gives me consistent, fluid spacing. Holy moly.
 
+Here’s a video of it on the very much in production, [Piccalilli](http://piccalil.li/) front-end: 
+
+<figure>
+<video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/174183/fluid-piccalilli.mp4" controls autoplay></video>
+<figcaption>The new Piccalilli homepage in a browser with a massive heading which reads “Dang Spicy tutorials and courses to level you up as a front⁠-⁠end developer and designer”. The browser is resized and that massive heading shrinks proportionally</figcaption>
+</figure> 
+
 ## Wrapping up
 
 Go and check out [Utopia](https://utopia.fyi/). I was lucky enough to work with both Trys and James on projects while doing freelance stuff for Clearleft, and I can tell you, there probably isn’t a better dream team for this sort of tool.
