@@ -7,6 +7,23 @@ I make _a lot_ of stuff, so this is an ever updating list of selected projects, 
 
 ***
 
+
+## Thanks for the reply, Guy!
+
+Reply-guys in your mentions? How about you give them a sarcastic pat on the back with a trophy?
+
+<https://thanksforthereply.com/>
+
+***
+
+## Piccalilli (re-launching soon!)
+
+Dang spicy design and front-end development tutorials and courses. Also includes a newsletter which is a pickle jar full of curated CSS links to slick websites, animations, illustrations, and algorithms.
+
+<https://piccalil.li>
+
+***
+
 ## Front-End Challenges Club
 
 Quick, fun challenges and solutions to help you to master front-end development.
@@ -96,14 +113,6 @@ A skeletal [Eleventy](https://11ty.io/) starter kit that gives you nothing but g
 My pal, [Heydon](https://twitter.com/heydonworks) and I teach you how to distill common layout problems into resilient, flexible layout solutions using good ol’ CSS. 
 
 <https://every-layout.dev>
-
-***
-
-## Piccalilli 
-
-A CSS newsletter which is a pickle jar full of curated CSS links to slick websites, animations, illustrations, and algorithms.
-
-<http://piccalil.li>
 
 ***
 
