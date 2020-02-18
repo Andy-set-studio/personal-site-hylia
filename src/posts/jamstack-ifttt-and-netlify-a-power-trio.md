@@ -36,7 +36,7 @@ Dave [created a page](https://daverupert.com/likes/) on his website which grabs 
 
 I wanted mine to be rendered at build time though, so I used [Eleventy JavaScript data files](https://www.11ty.dev/docs/data-js/) to [create a function](https://github.com/hankchizljaw/microblog/blob/master/src/_data/likes.js) that fetches my feed, converts it to JSON, then returns a nice array of items. This then gets [paginated by Eleventy](https://www.11ty.dev/docs/pagination/#paging-an-array). Lovely stuff.
 
-I turned it all out in about half an hour and was really happy with that. I really love how Eleventy enables super rapid development.
+I turned it all out in about half an hour and was really happy with that. I really love how Eleventy enables super rapid development. You can [see the final result, here](https://microblog.hankchizljaw.com/likes/0/).
 
 Later on though, I thought “what if I don’t post on my Micro Blog for a while and like a few articles in Feedbin in the meantime”. This was a pretty valid thought, so it was back to the drawing board to work it out.
 
@@ -44,7 +44,7 @@ Thanks to IFTTT, this problem was trivial to fix. I got IFTTT to monitor my [fav
 
 ## Longterm gains
 
-This stuff is right on my mind at the moment as I rebuild [Piccalilli](https://hankchizljaw.com/wrote/piccalilli:-the-future/). One key aspect of Piccalilli is the [well-known newsletter](//piccalil.li). I used to post the newsletter with [Curated](https://curated.co/), but on the new, Jamstack-powered platform, it’ll be web-first, which then syndicates to people’s inboxes.
+This stuff is right on my mind at the moment as I rebuild [Piccalilli](https://hankchizljaw.com/wrote/piccalilli:-the-future/) with the Jamstack and Eleventy. One key aspect of Piccalilli is the [well-known newsletter](//piccalil.li). I used to post the newsletter with [Curated](https://curated.co/), but on the new, Jamstack-powered platform, it’ll be web-first, which then syndicates to people’s inboxes.
 
 A newsletter issue will be published as an Eleventy-generated page and I’m then going to create a specific RSS feed that—you guessed it—IFTTT will monitor. I’m going to get IFTTT to post a webhook to my API which will scrape the RSS content and send it to people’s inboxes. Again: super simple and super effective.
 
