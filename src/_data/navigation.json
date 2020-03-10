@@ -1,11 +1,6 @@
 {
   "items": [
     {
-      "text": "Home",
-      "url": "/",
-      "rel": null
-    },
-    {
       "text": "Writing",
       "url": "/writing/",
       "rel": null
@@ -13,6 +8,11 @@
     {
       "text": "Projects",
       "url": "/projects/",
+      "rel": null
+    },
+    {
+      "text": "RSS",
+      "url": "https://hankchizljaw.com/feed/all.xml",
       "rel": null
     },
     {

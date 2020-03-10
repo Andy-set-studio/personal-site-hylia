@@ -4,7 +4,7 @@ date: '2020-02-18'
 tags: ['writing']
 ---
 
-I love the term power trio. I normally think of bands like Alkaline Trio or Biffy Clyro as power trios, but today, I’m going to talk to you about my ever-increasing obsession with the [Jamstack](https://jamstack.org/), a seasoning of [IFTTT](ifttt.com) and [Netlify](//netlify.com), and how I think there’s great power in simplicity when you pick the right tools to do the job.
+I love the term power trio. I normally think of bands like Alkaline Trio or Biffy Clyro as power trios, but today, I’m going to talk to you about my ever-increasing obsession with the [Jamstack](https://jamstack.org/), a seasoning of [IFTTT](//ifttt.com) and [Netlify](//netlify.com), and how I think there’s great power in simplicity when you pick the right tools to do the job.
 
 ## Micro Blog
 
