@@ -44,8 +44,8 @@ Tech it uses:
 
 ## Office
 
-I like plants and have a Bonsai Tree, some succulents and a dangly boi which I have no idea what it’s called.
+I like plants and have a ~Bonsai Tree, some succulents and a dangly boi~ which I have no idea what it’s called. (all the plants died 😭)
 
 It’d be rude not to show y’all the office, so here it is! 
 
-![My office desk with all of the above described items](https://hankchizljaw.imgix.net/IMG_0300.jpg?auto=format&q=60&sat=-30&con=20)
+![My office desk with all of the above described items](https://photos.hankchizljaw.com/photos/large/My%20Workspace-686656.jpeg)
