@@ -10,6 +10,9 @@
   <link rel="alternate" type="application/rss+xml" title="Links" href="/feed/links.xml">
   <link rel="icon" href="https://hankchizljaw.imgix.net/apple-touch-icon.png?sat=-100&con=100" type="image/png" />
   {% include "partials/global/meta-info.njk" %}
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <script type="module" src="/js/components/theme-toggle.js" async></script>
+  <style>{% include "assets/css/global.css" %}</style>
   {% block head %}
   {% endblock %}
 </head>
