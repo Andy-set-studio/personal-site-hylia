@@ -11,7 +11,7 @@
 /wrote/css-specifity-and-the-cascade     /wrote/css-specificity-and-the-cascade      301
 /wrote/i'm-warming-to-tailwind-css     /wrote/im-warming-to-tailwind-css 
 https://hankchizljaw.netlify.com/* https://hankchizljaw.com/:splat 301!
-/feed/page/* https://feed.hankchizljaw.com/feed/page/:splat 301!
-/notes/* https://feed.hankchizljaw.com/notes/:splat 301!
-/links/* https://feed.hankchizljaw.com/links/:splat 301!
+/feed/page/* https://archive.hankchizljaw.com/feed/page/:splat 301!
+/notes/* https://archive.hankchizljaw.com/notes/:splat 301!
+/links/* https://archive.hankchizljaw.com/links/:splat 301!
 
