@@ -42,11 +42,6 @@ module.exports = function(config) {
   config.addPassthroughCopy('src/images');
   config.addPassthroughCopy('src/js');
 
-  // Static legacy content
-  config.addPassthroughCopy('src/feed/page');
-  config.addPassthroughCopy('src/notes');
-  config.addPassthroughCopy('src/links');
-
   const now = new Date();
 
   // Custom collections
