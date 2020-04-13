@@ -8,6 +8,7 @@ tags: ['writing']
 
 <small>🇷🇺 _If you would prefer to read this article in Russian, head [over here](https://medium.com/@stasonmars/%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-%D1%81%D0%B1%D1%80%D0%BE%D1%81-css-f5816963c82b), where [Stas](https://twitter.com/stassonmars) has very kindly translated it for me_.</small> 
 
+<small>🇪🇸 _If you would prefer to read this article in Spanish, head [over here](https://super-simple.net/blog/un-css-reset-moderno/), where [superSimple](https://twitter.com/supersimplenet) has very kindly translated it for me_.</small> 
 ***
 
 I think about and enjoy very boring CSS stuff—probably much more than I should do, to be honest. One thing that I’ve probably spent too much time thinking about over the years, is CSS resets.
