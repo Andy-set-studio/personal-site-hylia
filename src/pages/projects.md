@@ -7,28 +7,52 @@ I make _a lot_ of stuff, so this is an ever updating list of selected projects, 
 
 ***
 
+## Learn Eleventy From Scratch Course
+
+Learn how to build a stunning website from scratch, using Eleventy, bleeding-edge front-end technologies and web development best practices—all powered by a resilient asset pipeline.
+
+<https://piccalil.li/course/learn-eleventy-from-scratch/>
+
+***
+
+
+## CSS From Scratch Course (in progress)
+
+Learn CSS from day zero on this course that contains fun, practical examples and demos that will kick-start your CSS learning journey. Sign up for updates.
+
+<https://piccalil.li/course/learn-css-from-scratch/>
+
+***
+
+## CUBE CSS (in progress) 
+
+A CSS methodology oriented towards simplicity and consistency with a heavy dosage of pragmatism. More content and docs on the way.
+
+<https://piccalil.li/blog/cube-css/>
+
+***
+
+## Gorko 
+
+A tiny, Sass-powered utility class generator, with handy helpers, that helps you to power your front-ends with a single source of truth.
+
+<https://github.com/hankchizljaw/gorko>
+
+***
+
+## Piccalilli
+
+Dang Spicy tutorials and courses to level you up as a front⁠-⁠end developer and designer. Also features a [weekly newsletter](https://piccalil.li/newsletters/0/).
+
+<https://piccalil.li/>
+
+***
 
 ## Thanks for the reply, Guy!
 
 Reply-guys in your mentions? How about you give them a sarcastic pat on the back with a trophy?
 
 <https://thanksforthereply.com/>
-
-***
-
-## Piccalilli (re-launching soon!)
-
-Dang spicy design and front-end development tutorials and courses. Also includes a newsletter which is a pickle jar full of curated CSS links to slick websites, animations, illustrations, and algorithms.
-
-<https://piccalil.li>
-
-***
-
-## Front-End Challenges Club
-
-Quick, fun challenges and solutions to help you to master front-end development.
-
-<https://front-end-challenges.club/>
 
 ***
 
@@ -56,16 +80,6 @@ An open source list of companies that have, or currently work with ICE.
 
 ***
 
-## Notion tricks 
-
-⚠️ *Very new and in progress*
-
-A little Notion-powered blog that features [Notion](https://notion.so) tips and tricks.
-
-<https://notion-tricks.com>
-
-***
-
 ## Global date and time
 
 It’s handy to see what time it is for you and every other major timezone sometimes, so I made a thing that does exactly that.
@@ -74,23 +88,6 @@ It’s handy to see what time it is for you and every other major timezone somet
 
 ***
 
-## Music blog
-
-I really like music. I listen to a heck of a lot, so I share some of my favourite stuff on there.
-
-<https://tracks.hankchizljaw.com>
-
-***
-
-## CSS From Scratch
-
-⚠️ _Very much a work in progress_
-
-A book where I teach you to write CSS from day zero. [Sign up for updates](https://www.producthunt.com/upcoming/css-from-scratch).
-
-<https://cssfromscratch.com>
-
-***
 
 ## Hylia 
 
@@ -113,16 +110,6 @@ A skeletal [Eleventy](https://11ty.io/) starter kit that gives you nothing but g
 My pal, [Heydon](https://twitter.com/heydonworks) and I teach you how to distill common layout problems into resilient, flexible layout solutions using good ol’ CSS. 
 
 <https://every-layout.dev>
-
-***
-
-## Stalfos 
-
-⚠️ _Extremely under development_
-
-A (S)CSS boilerplate/framework that helps you get a solid structure with a handy utility/token class generator.
-
-<https://github.com/hankchizljaw/stalfos/tree/feature/v2>
 
 ***
 
@@ -166,22 +153,6 @@ A list of Facebook projects or projects that rely heavily on Facebook tech, with
 
 ***
 
-## Personal Sites
-
-I love personal websites, so I collect them! 
-
-<https://personalsit.es>
-
-***
-
-## Dev Pal
-
-Learning front-end development is tough and sometimes it’s helpful to ask someone a question. That's where Dev Pal steps in as your pal for help and advice.
-
-<https://devpal.io>
-
-***
-
 ## TypeMate
 
 TypeMate is a little JavaScript module that fixes your typesetting woes automatically. Right now it only fixes orphans, but the plan is to add more filters in the future.
@@ -192,7 +163,7 @@ TypeMate is a little JavaScript module that fixes your typesetting woes automati
 
 ## Boilerform
 
-Boilerform is a little HTML and CSS boilerplate to take the pain away from working with forms.
+A little HTML and CSS boilerplate to take the pain away from working with forms.
 
 <https://boilerform.hankchizljaw.com>
 
