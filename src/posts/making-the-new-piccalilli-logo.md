@@ -5,7 +5,7 @@ date: '2020-01-24'
 tags: ['writing']
 ---
 
-The initial logo for [Piccalilli](https://piccalil.li/) was rushed together in about 10 minutes in illustrator and let’s be honest, it was shit.
+The initial logo for [Piccalilli](https://piccalil.li/) was rushed together in about 10 minutes in illustrator and let’s be honest, it was shit.
 
 ![The old logo which is a yellow and red jar with “Piccalilli” written next to it](https://hankchizljaw.imgix.net/piccalilli-old.jpg?auto=format&q=60)
 
