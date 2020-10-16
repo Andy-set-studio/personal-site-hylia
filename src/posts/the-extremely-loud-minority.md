@@ -53,4 +53,4 @@ Even a slight change in that dynamic would likely have a massive positive impact
 
 ---
 
-<sup>\*</sup> There are lots of fantastic people in the JavaScript community who have much better, balanced opinions. I recommend seaking them out instead.
+<sup>\*</sup> There are lots of fantastic people in the JavaScript community who have much better, balanced opinions. I recommend seaking them out instead. Also, [CSS doesn’t suck](https://hankchizljaw.com/wrote/css-doesnt-suck/).
