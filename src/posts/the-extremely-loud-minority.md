@@ -45,7 +45,7 @@ Now, here’s WordPress’
 
 It’s understandable to think that JavaScript frameworks and their communities are eating the web because places like Twitter are _awash with very loud voices from said communities_.
 
-Always remember that although a **subset of the JavaScript community** can be **very loud**, they a **paltry portion of the web as a whole**. This means that when _they_ say something like “CSS sucks”—what they mean is “CSS sucks for a small subset of less than 1 percent of the web” <sup>\*</sup>.
+Always remember that although a **subset of the JavaScript community** can be **very loud**, they represent a **paltry portion of the web as a whole**. This means that when _they_ say something like “CSS sucks”—what they mean is “CSS sucks for a small subset of less than 1 percent of the web” <sup>\*</sup>.
 
 Now when you look at it like that, it makes you wonder why we give these people such a large stage which the _very quiet_ **majority** don’t get a voice at all. The very quiet majority are out there building 99% of the web, after all.
 
