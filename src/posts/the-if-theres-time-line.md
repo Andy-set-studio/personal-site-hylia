@@ -13,11 +13,11 @@ As much as I use and like tools like [Notion](http://notion.so/) and [Things](ht
 
 Fairly recently, I had a lightbulb moment: maybe I can use Apple Notes, my iPad and Apple Pencil as a Bullet Journal. I already pretty much live on my iPad doing design work, so it makes sense. The main plus is that I’m handwriting (awfully, I must add) again, which is suprisingly important for me, it seems.
 
-This isn’t really the article to explain how all that setup works—maybe I’ll write about it one day. Just imagine it’s a bog-standard bullet journal, but instead of a paper notebook, it’s digital pages. This is why I went digital in the first place, because I developed a low-key phobia of losing my actual paper Bullet Journal.
+This isn’t really the article to explain how all that setup works—maybe I’ll write about it one day. Just imagine it’s a bog-standard Bullet Journal, but instead of a paper notebook, it’s digital pages. This is why I went digital in the first place: because I developed a low-key phobia of losing my actual paper Bullet Journal.
 
 ## The line
 
-Anyway, I’m waffling—let’s focus on the important bit: the line. I’m rather overwhelmed right now (hello pandemic) and to get me through this phase, I’m trying a new thing with lots of success.
+Anyway, I’m waffling—let’s focus on the important bit: the line. I’m rather overwhelmed right now (hello, pandemic) and to get me through this phase, I’m trying a new thing with lots of success.
 
 It’s called the “if there’s time” line and looks like this:
 
