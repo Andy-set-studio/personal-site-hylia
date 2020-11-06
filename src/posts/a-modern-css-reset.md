@@ -27,12 +27,6 @@ I still like to reset stuff, so I’ve been slowly and continually tinkering wit
   box-sizing: border-box;
 }
 
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
 /* Remove default margin */
 body,
 h1,
@@ -40,29 +34,29 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
-li,
 figure,
-figcaption,
 blockquote,
 dl,
 dd {
   margin: 0;
 }
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-}
-
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-  list-style: none;
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,14 +65,10 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img {
+img,
+picture {
   max-width: 100%;
   display: block;
-}
-
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -115,12 +105,6 @@ We start with box-sizing. I just flat out reset all elements and pseudo-elements
 Some people think that pseudo-elements should `inherit` box sizing, but I think that’s silly. If you want to use a [different box-sizing value](https://css-tricks.com/almanac/properties/b/box-sizing/), set it explicitly—at least that’s what I do, anyway. I wrote about box-sizing more over on [CSS From Scratch](https://cssfromscratch.com/posts/bite-sized-basics-box-sizing/).
 
 ```css
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
 /* Remove default margin */
 body,
 h1,
@@ -128,8 +112,6 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
 li,
 figure,
 figcaption,
@@ -140,9 +122,7 @@ dd {
 }
 ```
 
-After box-sizing, I do a blanket reset of `margin` and `padding`, where it gets set by the browser styles. This is all pretty self-explanatory, so I won’t get into it too much.
-
-I _will_ mention the situation with lists, though. I select only lists that **do** have a `class` attribute because if a plain ol’ `<ul>` or `<ol>` gets used, I want it to look like a list. A lot of resets, including my previous ones, aggressively remove that.
+After box-sizing, I do a blanket reset of `margin`, where it gets set by the browser styles. This is all pretty self-explanatory, so I won’t get into it too much.
 
 ```css
 body {
@@ -158,13 +138,13 @@ Next up: body styles. I keep this really simple. It’s useful for the `<body>` 
 I only set two text styles. I set the `line-height` to be `1.5` because the default `1.2` just isn’t big enough to have accessible, readable text. I also set `text-rendering` to `optimizeSpeed`. Using `optimizeLegibility` makes your text look nicer, but can have serious performance issues such as [30 second loading delays](https://marco.org/2012/11/15/text-rendering-optimize-legibility), so I try to avoid that now. I do sometimes add it to sections of microcopy though.
 
 ```css
-ul[class],
-ol[class] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 ```
 
-Just like the margin and padding rules, I only reset `list-style` where a list element has a `class` attribute.
+I only reset `list-style` where a list element has a `role=["list"]` attribute. This assists with some [accessibility issues, expertly explained by Scott](https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html).
 
 ```css
 a:not([class]) {
@@ -182,14 +162,6 @@ img {
 ```
 
 Good ol’ fluid image styles come next. I set images to be a block element because frankly, life is too short for that weird gap you get at the bottom, and realistically, images—especially with work I do—tend to behave like blocks.
-
-```css
-article > * + * {
-  margin-top: 1em;
-}
-```
-
-I _really_ like this CSS trick and I’ve finally been brave enough to add it to the reset. [The lobotomised owl selector](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/) targets direct descendants of an article and adds `1em` of top margin to them. This gives a solid rhythm to flow content. I actually use a `.flow` utility in every project now. You can [read more about it on 24 Ways](https://24ways.org/2018/managing-flow-and-rhythm-with-css-custom-properties/). In fact, I reckon it’s my most used CSS these days.
 
 ```css
 input,
@@ -216,6 +188,8 @@ Another thing I’ve finally been brave enough to set as default is `font: inher
 Last, and by no means least, is a single `@media` query that resets animations, transitions and scroll behaviour if the [user prefers reduced motion](https://css-tricks.com/introduction-reduced-motion-media-query/). I like this in the reset, with [specificity trumping](https://hankchizljaw.com/wrote/css-specificity-and-the-cascade/) `!important` selectors, because most likely now, if a user doesn’t want motion, they won’t get it, regardless of the CSS that follows this reset.
 
 ℹ️ **Update**: _Thanks to [@atomiks](https://github.com/atomiks), this has [been updated](https://github.com/hankchizljaw/modern-css-reset/pull/6) so it doesn’t break JavaScript events watching for `animationend` and `transitionend`._
+
+**Updated: November 6th, 2020 with list rules.**
 
 ## Wrapping up
 
